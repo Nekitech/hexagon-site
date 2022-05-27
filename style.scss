@@ -12,6 +12,7 @@ $prom-potential: #9b7feb;
 $science-sity: #00C9EF;
 $agro: #5BCBA4;
 $science-potential: #00CCCC;
+$bg: #04121f;
 
 *{
     box-sizing: border-box;
@@ -19,8 +20,78 @@ $science-potential: #00CCCC;
     padding: 0;
 }
 body {
-    background-color: #04121f;
+    background-color: $bg;
     overflow: hidden;
     
+    
 }
+$widthItem: 220px;
+    $m: 0px; // margin
+    $f: calc(#{$widthItem} * 1.732 + 4 * #{$m} - 1px);
+.block {
+    display:flex;
+}
+.hex-layout {
+    width: 85vw;
+    position: relative;
+    left: -310px;
+    top: -110px;
+    
+ 
+}
+.hex-layout::before {
+    content: "";
+    width: calc(#{$widthItem}/2 + #{$m});
+    float: left;
+    height: 120%;
+    shape-outside: repeating-linear-gradient(#0000 0 calc(#{$f} - 3px), red 0 #{$f} );
+  }
+.hex-item {
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    width: #{$widthItem};
+    margin: #{$m};
+    height: calc(#{$widthItem}*1.1547); 
+    background-color: #6c6d71;
+    margin-bottom: calc(#{$m} - #{$widthItem} * 0.2886);
+    position: relative;
+    
+}
+.hex-item::after {
+    content: '';
+    position: absolute;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    width: inherit;
+    height: inherit;
+    transform: scale(0.8);
+    background-color: $bg;
+
+}
+
+
+
+.hex-item:nth-child(5){
+    opacity: 0;
+}
+.hex-item:nth-child(6){
+    opacity: 0;
+}
+.hex-item:nth-child(7){
+    opacity: 0;
+}
+.hex-item:nth-child(12){
+    opacity: 0;
+}
+.hex-item:nth-child(13){
+    opacity: 0;
+}
+.hex-item:nth-child(32){
+    opacity: 0;
+}
+.hex-item:nth-child(33){
+    opacity: 0;
+}
+
+
 
