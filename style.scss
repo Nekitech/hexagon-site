@@ -13,6 +13,7 @@ $science-sity: #00C9EF;
 $agro: #5BCBA4;
 $science-potential: #00CCCC;
 $bg: #04121f;
+$borderColor: #6a6869;
 
 *{
     box-sizing: border-box;
@@ -26,8 +27,10 @@ body {
     
 }
 $widthItem: 220px;
-    $m: 0px; // margin
-    $f: calc(#{$widthItem} * 1.732 + 4 * #{$m} - 1px);
+$heightItem: 254.03px;
+$m: 0px; // margin
+$f: calc(#{$widthItem} * 1.732 + 4 * #{$m} - 1px);
+$sizeIcon: 140px;
 .block {
     display:flex;
 }
@@ -36,6 +39,7 @@ $widthItem: 220px;
     position: relative;
     left: -310px;
     top: -110px;
+    font-size: 0;
     
  
 }
@@ -52,9 +56,9 @@ $widthItem: 220px;
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
     width: #{$widthItem};
     margin: #{$m};
-    height: calc(#{$widthItem}*1.1547); 
-    background-color: #6c6d71;
-    margin-bottom: calc(#{$m} - #{$widthItem} * 0.2886);
+    height: #{$heightItem}; 
+    background-color: $borderColor;
+    margin-bottom: calc(#{$m} - #{$widthItem} * 0.291);
     position: relative;
     
 }
@@ -64,11 +68,18 @@ $widthItem: 220px;
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
     width: inherit;
     height: inherit;
-    transform: scale(0.8);
+    transform: scale(0.95);
     background-color: $bg;
-
+   
 }
-
+.hex-item__icon{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: calc(#{$widthItem/2 - $sizeIcon/2});
+    top: calc(#{$heightItem/2 - $sizeIcon/2});
+    z-index: 2;
+}
 
 
 .hex-item:nth-child(5){
