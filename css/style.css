@@ -225,6 +225,7 @@ body {
   height: 80px;
   background-image: url(./img/close-svgrepo-com.svg);
   display: none;
+  cursor: pointer;
 }
 
 .hex-item-active {
