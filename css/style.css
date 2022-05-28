@@ -40,7 +40,7 @@ body {
   width: 220px;
   margin: 0px;
   height: 254.03px;
-  background-color: #6a6869;
+  background: linear-gradient(45deg, #595f65, white);
   margin-bottom: calc(0px - 220px * 0.291);
   position: relative;
 }
@@ -55,6 +55,19 @@ body {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
   background-color: #04121f;
+}
+
+.hex-item::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: -42px;
+  top: 52px;
+  -webkit-box-shadow: 0 0 40px 20px #3b76bd;
+          box-shadow: 0 0 40px 20px #3b76bd;
+  z-index: 4;
 }
 
 .hex-item__icon {

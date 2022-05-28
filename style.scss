@@ -12,9 +12,14 @@ $prom-potential: #9b7feb;
 $science-sity: #00C9EF;
 $agro: #5BCBA4;
 $science-potential: #00CCCC;
-$bg: #04121f;
-$borderColor: #6a6869;
 
+$bg: #04121f;
+$borderColor: linear-gradient(45deg, rgb(89, 95, 101), rgb(255, 255, 255));
+$widthItem: 220px;
+$heightItem: 254.03px;
+$m: 0px; // margin
+$f: calc(#{$widthItem} * 1.732 + 4 * #{$m} - 1px);
+$sizeIcon: 120px;
 *{
     box-sizing: border-box;
     margin: 0;
@@ -26,11 +31,6 @@ body {
     
     
 }
-$widthItem: 220px;
-$heightItem: 254.03px;
-$m: 0px; // margin
-$f: calc(#{$widthItem} * 1.732 + 4 * #{$m} - 1px);
-$sizeIcon: 120px;
 
 .block {
     display:flex;
@@ -58,7 +58,7 @@ $sizeIcon: 120px;
     width: #{$widthItem};
     margin: #{$m};
     height: #{$heightItem}; 
-    background-color: $borderColor;
+    background: $borderColor;
     margin-bottom: calc(#{$m} - #{$widthItem} * 0.291);
     position: relative;
     
@@ -72,6 +72,17 @@ $sizeIcon: 120px;
     transform: scale(0.95);
     background-color: $bg;
    
+}
+.hex-item::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: -42px;
+    top: 52px;
+    box-shadow: 0 0 40px 20px rgb(59, 118, 189);
+    z-index: 4;
 }
 .hex-item__icon{
     width: $sizeIcon;
@@ -90,7 +101,6 @@ $sizeIcon: 120px;
     align-items: center;
     justify-content: space-around;
     opacity: 0;
-
     transition: 0.5s all;
 }
 .active-page {
@@ -160,6 +170,27 @@ $sizeIcon: 120px;
 #hexPage{
     cursor: pointer;
 }
+// [sector=industry]::after {
+//     background-color: $industry;
+// }
+// [sector=culture-tour]::after {
+//     background-color: $culture-tour;
+// }
+// [sector=export]::after {
+//     background-color: $export;
+// }
+// [sector=science-potential]::after {
+//     background-color: $science-potential;
+// }
+// [sector=science-city]::after {
+//     background-color: $science-sity;
+// }
+// [sector=prom-potential]::after {
+//     background-color: $prom-potential;
+// }
+// [sector=agro]::after {
+//     background-color: $agro;
+// }
 
 
 
