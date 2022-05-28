@@ -20,7 +20,7 @@ body {
   width: 85vw;
   position: relative;
   left: -310px;
-  top: 58px;
+  top: -62px;
   font-size: 0;
 }
 
@@ -39,7 +39,7 @@ body {
           clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
   width: 220px;
   margin: 0px;
-  height: 254.03px;
+  height: calc(220px * 1.1547);
   background: linear-gradient(45deg, #595f65, white);
   margin-bottom: calc(0px - 220px * 0.291);
   position: relative;
@@ -71,12 +71,113 @@ body {
 }
 
 .hex-item__icon {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   position: absolute;
-  left: calc(50px);
-  top: calc(67.015px);
+  left: calc(60px);
+  top: calc(calc(220px * 1.1547)/2 - 100px/2);
   z-index: 2;
+}
+
+[tag=industry] {
+  top: 228px;
+  left: 648px;
+}
+
+[tag=culture-tour] {
+  top: 404px;
+  left: 316px;
+}
+
+[tag=export] {
+  top: 425px;
+  left: 750px;
+}
+
+[tag=export] .bar {
+  width: 80px;
+}
+
+[tag=science-potential] {
+  top: 600px;
+  left: 200px;
+}
+
+[tag=science-potential] .bar {
+  width: 45px;
+}
+
+[tag=science-city] {
+  top: 610px;
+  left: 636px;
+}
+
+[tag=science-city] .bar {
+  width: 80px;
+}
+
+[tag=prom-potential] {
+  top: 800px;
+  left: 316px;
+}
+
+[tag=agro] {
+  top: 810px;
+  left: 750px;
+}
+
+.hex-item__tag {
+  position: absolute;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle {
+  -webkit-clip-path: circle(8.1% at 50% 50%);
+          clip-path: circle(8.1% at 50% 50%);
+  background-color: #e0dedc;
+  width: 8px;
+  height: 8px;
+  -webkit-transform: scale(10);
+          transform: scale(10);
+}
+
+.bar {
+  width: 50px;
+  height: 3px;
+  background-color: #e0dedc;
+}
+
+.area {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #e0dedc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+}
+
+.hex-item__text {
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .hexagon__page {
@@ -112,13 +213,8 @@ body {
 }
 
 .hexagon__text-page {
-  opacity: 0;
-  color: #fff;
+  color: #000;
   font-size: 24px;
-  -webkit-transform: translateY(300%);
-          transform: translateY(300%);
-  -webkit-transition: 2s all;
-  transition: 2s all;
 }
 
 .hexagon__page-close {
@@ -128,6 +224,7 @@ body {
   width: 80px;
   height: 80px;
   background-image: url(./img/close-svgrepo-com.svg);
+  display: none;
 }
 
 .hex-item-active {
@@ -137,7 +234,7 @@ body {
 
 .right-side {
   position: absolute;
-  top: 310px;
+  top: 180px;
   right: 160px;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
@@ -146,6 +243,34 @@ body {
 .title {
   font-size: 46px;
   color: #fff;
+}
+
+.hexagon__block {
+  width: 400px;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 4px solid #395e89;
+  opacity: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
+  -webkit-transition: 2s all;
+  transition: 2s all;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.hexagon__block-logo {
+  width: 250px;
+  height: 250px;
 }
 
 .hex-item:nth-child(5) {
