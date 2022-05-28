@@ -20,7 +20,7 @@ body {
   width: 85vw;
   position: relative;
   left: -310px;
-  top: -110px;
+  top: 58px;
   font-size: 0;
 }
 
@@ -58,12 +58,81 @@ body {
 }
 
 .hex-item__icon {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   position: absolute;
-  left: calc(40px);
-  top: calc(57.015px);
+  left: calc(50px);
+  top: calc(67.015px);
   z-index: 2;
+}
+
+.hexagon__page {
+  width: 0;
+  height: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  opacity: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.active-page {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.hexagon__text-page {
+  opacity: 0;
+  color: #fff;
+  font-size: 24px;
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
+  -webkit-transition: 2s all;
+  transition: 2s all;
+}
+
+.hexagon__page-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 80px;
+  height: 80px;
+  background-image: url(./img/close-svgrepo-com.svg);
+}
+
+.hex-item-active {
+  -webkit-clip-path: none !important;
+          clip-path: none !important;
+}
+
+.right-side {
+  position: absolute;
+  top: 310px;
+  right: 160px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.title {
+  font-size: 46px;
+  color: #fff;
 }
 
 .hex-item:nth-child(5) {
@@ -92,4 +161,8 @@ body {
 
 .hex-item:nth-child(33) {
   opacity: 0;
+}
+
+#hexPage {
+  cursor: pointer;
 }
