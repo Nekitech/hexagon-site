@@ -133,3 +133,104 @@ $textBoldSize: 42px;
 .twoSlide__image-space-eat b {
     font-size: 56px;
 }
+
+// Начальный слайд - Культурно-исторический потенциал
+
+.section-tour {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    max-height: 1080px;
+    height: 100%;
+}
+
+.section-tour__block {
+    width: 450px;
+    height: 350px;
+    justify-self: center;
+    border: 4px solid #395e89;
+    padding: 5px 5px 30px 5px;
+    grid-column: 3;
+    grid-row: 3;
+}
+.section-tour__title {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: $titleFontSize;
+    align-self: center;
+    text-align: center;
+}
+
+.section-tour__block:nth-child(2) {
+    grid-column: 1;
+    grid-row: 1;
+}
+.section-tour__block:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+}
+.section-tour__block:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+}
+.section-tour__block:nth-child(5) {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.sectiontour__img {
+    width: 100%;
+    height: 80%;
+}
+.section-tour__text {
+    font-size: $textSize;
+}
+
+// 1 слайд - Культурно - исторический потенциал
+.tour-oneSlide {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s all;
+    position: relative;
+    transform: translateY(0px);
+    background-color: #fff;
+}
+.tour-oneSlide__block {
+}
+.tour-oneSlide__block > img {
+    width: 100%;
+    height: 100%;
+}
+.tour-oneSlide__title {
+}
+.tour-oneSlide__item {
+}
+.tour-oneSlide__icon {
+    width: 100%;
+    height: 100%;
+}
+.tour-oneSlide__block:nth-child(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.tour-oneSlide__block:nth-child(2) {
+    grid-column: 1/span 1;
+    grid-row: 1;
+}
+.tour-oneSlide__block:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+}
+.tour-oneSlide__block:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2;
+}
+.tour-oneSlide__block:nth-child(5) {
+    grid-column: 1;
+    grid-row: 3;
+}
