@@ -35,6 +35,10 @@ $titleFontSize: 60px;
     width: calc(#{$widthSection}/2 - 40px);
     height: 450px;
     margin-right: 40px;
+    cursor: pointer;
+    border: 4px solid #395e89;
+    padding: 5px;
+    margin-bottom: 20px;
 }
 .startSlide__img {
     height: 80%;
@@ -103,11 +107,9 @@ $textBoldSize: 42px;
 }
 .twoSlide__left-side {
     flex: 3;
-
 }
 .twoSlide__title {
     font-size: $titleFontSize;
-    
 }
 .twoSlide__text-space-eat {
     display: flex;
@@ -115,7 +117,7 @@ $textBoldSize: 42px;
     justify-content: space-between;
     font-size: $textSize;
     margin-top: 40px;
-    height: 96%;
+    height: 80%;
 }
 .twoSlide__right-side {
     display: flex;
