@@ -12,15 +12,17 @@ $titleFontSize: 60px;
     opacity: 0;
     transform: translateY(300%);
     transition: 2s all;
-    margin-top: 80px;
+}
+.startSlide {
+    
 }
 .anima-ascent {
    
 }
-.section__title {
+.startSlide__title {
     font-size: $titleFontSize;
 }
-.section__blocks {
+.startSlide__blocks {
     margin-top: 30px;
     width: inherit;
     height: inherit;
@@ -29,77 +31,103 @@ $titleFontSize: 60px;
     flex-wrap: wrap;
     
 }
-.section__block {
+.startSlide__block {
     width: calc(#{$widthSection}/2 - 40px);
     height: 450px;
     margin-right: 40px;
 }
-.section__img {
+.startSlide__img {
     height: 80%;
     width: 100%;
 }
-.section__text {
+.startSlide__text {
     font-size: 30px;
 }
 
 // 2 слайд - Наукоград
-
-.section__info {
+$textSize: 38px;
+$textBoldSize: 42px;
+.oneSlide {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s all;
+    position: relative;
+    transform: translateY(0px);
+    background-color: #fff;
+}
+.oneSlide__info {
     margin-top: 40px;
 }
-.section__text-img {
+.oneSlide__title {
+    font-size: $titleFontSize;
+}
+.oneSlide__text-img {
     float: left;
     margin: 0 100px 0 0;
-    height: 1000px;
+    height: 600px;
     width: 600px;
 }
-.section__info-text {
-    font-size: 48px;
+.oneSlide__info-text {
+    font-size: $textSize;
 }
-.section__info-text > b, .section__info-text ul b {
-    font-size: 56px;
+.oneSlide__info-text > b, .section__info-text ul b {
+    font-size: $textBoldSize;
 }
-.section__info-text div {
+.oneSlide__info-text div {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-.section__info-text div p {
+.oneSlide__info-text div p {
     margin-right: 40px;
 }
+
+
+
 // 3 Слайд - Наукоград
 
-.section__space-eat {
-    display: flex;
+.twoSlide {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s all;
+    position: relative;
+    transform: translateY(0px);
+    background-color: #fff;
 }
-.section__left-side {
+.twoSlide__space-eat {
+    display: flex;
+    padding: 100px 0 0 0;
+    height: inherit;
+}
+.twoSlide__left-side {
     flex: 3;
-    height: 100%;
 
 }
-.section__title {
+.twoSlide__title {
     font-size: $titleFontSize;
     
 }
-.section__text-space-eat {
+.twoSlide__text-space-eat {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 48px;
+    font-size: $textSize;
     margin-top: 40px;
+    height: 96%;
 }
-.section__right-side {
-    width: 50%;
+.twoSlide__right-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
 }
-.section__image-space-eat {
+.twoSlide__image-space-eat {
     width: 100%;
     height: 30%;
     
 }
-.section__image-space-eat b {
+.twoSlide__image-space-eat b {
     font-size: 56px;
 }

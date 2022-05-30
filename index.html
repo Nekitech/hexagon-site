@@ -230,36 +230,37 @@
     <div class="hexagon__page" id="science-city">
         <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
         
-        <section class="section anima-ascent">
-            <h3 class="section__title">Город-наукоград Мичуринск</h3>
-            <div class="section__blocks">
-                <div class="section__block">
-                    <img src="img/Michurin.jpg" alt="" class="section__img">
-                    <p class="section__text">«Мастерская» Мичурина
+        <section class="section startSlide anima-ascent">
+            <h3 class="startSlide__title">Город-наукоград Мичуринск</h3>
+            <div class="startSlide__blocks">
+                <div class="startSlide__block" id="popup-one">
+                    <img src="img/Michurin.jpg" alt="" class="startSlide__img">
+                    <p class="startSlide__text">«Мастерская» Мичурина
                     </p>
                 </div>
-                <div class="section__block">
-                    <img src="img/tubicks.jpg" alt="" class="section__img">
-                    <p class="section__text">Питание для космонавтов
+                <div class="startSlide__block" id="popup-two">
+                    <img src="img/tubicks.jpg" alt="" class="startSlide__img">
+                    <p class="startSlide__text">Питание для космонавтов
                     </p>
                 </div>
-                <div class="section__block">
-                    <img src="img/factory.jpg" alt="" class="section__img">
-                    <p class="section__text">Технологии для АПК
+                <div class="startSlide__block">
+                    <img src="img/factory.jpg" alt="" class="startSlide__img">
+                    <p class="startSlide__text">Технологии для АПК
                     </p>
                 </div>
-                <div class="section__block">
-                    <img src="img/build.jpg" alt="" class="section__img">
-                    <p class="section__text">Кузница кадров
+                <div class="startSlide__block">
+                    <img src="img/build.jpg" alt="" class="startSlide__img">
+                    <p class="startSlide__text">Кузница кадров
                     </p>
                 </div>
             </div>
         </section>
-        <section class="section anima-ascent">
-            <h3 class="section__title">«Мастерская» Мичурина</h3>
-            <div class="section__info">
-                    <img class="section__text-img" src="img/michurinMonument.png" alt="">
-                    <div class="section__info-text">
+        <section class="section oneSlide" popup="popup-one">
+            <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
+            <h3 class="oneSlide__title">«Мастерская» Мичурина</h3>
+            <div class="oneSlide__info">
+                    <img class="oneSlide__text-img" src="img/michurinMonument.png" alt="">
+                    <div class="oneSlide__info-text">
                         <b>Более 300 новых сортов</b> <br>
                         плодовых, ягодных, декоративных и других 
                         ценных культурных растений<br><br>
@@ -291,11 +292,12 @@
 
             </div>
         </section>
-        <section class="section anima-ascent">
-            <div class="section__space-eat">
-                <div class="section__left-side">
-                    <h3 class="section__title">Питание для космонавтов</h3>
-                    <p class="section__text-space-eat">
+        <section class="section twoSlide" popup="popup-two">
+            <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
+            <div class="twoSlide__space-eat">
+                <div class="twoSlide__left-side">
+                    <h3 class="twoSlide__title">Питание для космонавтов</h3>
+                    <p class="twoSlide__text-space-eat">
                         <b>Более 30 поставок<br> продуктов питания на МКС</b>
                         <br>
                         <b>22 поставки<br> 
@@ -317,10 +319,10 @@
                         
                     </p>
                 </div>
-                <div class="section__right-side">
-                    <img src="img/mars-500.png" alt="" class="section__image-space-eat">
-                    <img src="img/space-eat-one.jpg" alt="" class="section__image-space-eat">
-                    <img src="img/space-eat-two.jpg" alt="" class="section__image-space-eat">
+                <div class="twoSlide__right-side">
+                    <img src="img/mars-500.png" alt="" class="twoSlide__image-space-eat">
+                    <img src="img/space-eat-one.jpg" alt="" class="twoSlide__image-space-eat">
+                    <img src="img/space-eat-two.jpg" alt="" class="twoSlide__image-space-eat">
                 </div>
             </div>
         </section>
@@ -340,5 +342,6 @@
     
     
     <script defer src="script.js"></script>
+    <script defer src="popup.js"></script>
 </body>
 </html>
