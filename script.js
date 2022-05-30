@@ -19,10 +19,10 @@ hexPages.forEach((elem) => {
                 page.style.backgroundColor = '#fff'
             ], 500)
             let close = page.querySelector('.hexagon__page-close')
-            let blocks = page.querySelectorAll('.hexagon__block')
+            let blocks = page.querySelectorAll('.anima-ascent')
             close.style.display = 'block'
             blocks.forEach((el) => {
-                el.style.transform = 'translateY(0)'
+                el.style.transform = 'translateY(0px)'
                 el.style.opacity = '100%'
             })
                 
