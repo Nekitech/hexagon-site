@@ -176,6 +176,10 @@ body {
     flex-direction: column;
     opacity: 0;
     transition: 0.5s all;
+    overflow-y: scroll;
+}
+.hexagon__page::-webkit-scrollbar {
+    width: 0;
 }
 
 .active-page {

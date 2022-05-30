@@ -1,6 +1,5 @@
 
-$widthSection: calc(100%  - 180px);
-
+$widthSection: calc(100%  - 140px);
 
 
 .section {
@@ -13,12 +12,13 @@ $widthSection: calc(100%  - 180px);
     opacity: 0;
     transform: translateY(300%);
     transition: 2s all;
+    margin-top: 80px;
 }
 .anima-ascent {
    
 }
 .section__title {
-    font-size: 40px;
+    font-size: 60px;
 }
 .section__blocks {
     margin-top: 30px;
@@ -40,4 +40,30 @@ $widthSection: calc(100%  - 180px);
 }
 .section__text {
     font-size: 30px;
+}
+
+// 2 слайд - Мичурин инфо
+
+.section__info {
+    margin-top: 40px;
+}
+.section__text-img {
+    float: left;
+    margin: 0 100px 0 0;
+    height: 1000px;
+    width: 600px;
+}
+.section__info-text {
+    font-size: 48px;
+}
+.section__info-text > b, .section__info-text ul b {
+    font-size: 56px;
+}
+.section__info-text div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section__info-text div p {
+    margin-right: 40px;
 }
