@@ -334,8 +334,7 @@
 
 .tour-oneSlide__title {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column: 2;
   grid-area: title;
   -ms-flex-item-align: center;
       align-self: center;
@@ -416,8 +415,7 @@
 
 .tour-twoSlide__title {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column: 2;
   grid-area: title;
   font-size: 60px;
       justify-self: center;
@@ -501,8 +499,7 @@
 .tour-threeSlide__title {
   font-size: 60px;
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column: 2;
   grid-area: title;
 }
 
@@ -589,4 +586,68 @@
 .tour-threeSlide__block:nth-of-type(6) > img {
   width: 400px;
   height: 220px;
+}
+
+.tour-fourSlide {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: (350px)[3];
+      grid-template-rows: repeat(3, 350px);
+      grid-template-areas: "leftSide title" "leftSide oneBlock" "leftSide twoBlock";
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  position: relative;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  background-color: #fff;
+  padding: 10px 20px 20px 20px;
+}
+
+.tour-fourSlide__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: title;
+  font-size: 60px;
+}
+
+.tour-fourSlide__block {
+  width: 400px;
+  height: 300px;
+}
+
+.tour-fourSlide__block:nth-of-type(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: leftSide;
+}
+
+.tour-fourSlide__block:nth-of-type(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: oneBlock;
+}
+
+.tour-fourSlide__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tour-fourSlide__block:nth-of-type(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: twoBlock;
 }
