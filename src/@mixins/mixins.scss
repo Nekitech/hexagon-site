@@ -1,0 +1,10 @@
+@mixin startStyleAnima {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s all;
+    position: relative;
+    transform: translateY(0px);
+    background-color: #fff;
+}
+
