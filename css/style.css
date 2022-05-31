@@ -399,8 +399,8 @@
   display: grid !important;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-columns: 1fr 2fr 2fr;
-      grid-template-columns: 1fr 2fr 2fr;
+  -ms-grid-rows: 1fr 2fr 2fr;
+      grid-template-rows: 1fr 2fr 2fr;
       grid-template-areas: "title title title" "textBlock textBlock monument" "rooms rooms card";
   width: 0;
   height: 0;
@@ -420,7 +420,6 @@
   -ms-grid-column-span: 3;
   grid-area: title;
   font-size: 60px;
-  -ms-grid-column-align: center;
       justify-self: center;
 }
 
@@ -443,7 +442,6 @@
 .tour-twoSlide__block:first-child {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: textBlock;
 }
 
@@ -456,10 +454,8 @@
 .tour-twoSlide__block:nth-child(3) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: textBlock;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
 }
 
@@ -480,6 +476,119 @@
   color: #fff;
   padding: 20px;
   font-weight: 900;
+}
+
+.tour-threeSlide {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "title title title" "textBlock twoImg twoImg" "tambovNab twoImg twoImg" "soborPl soborPreo Nikol";
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  position: relative;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  background-color: #fff;
+  padding: 10px 20px 20px 20px;
+}
+
+.tour-threeSlide__title {
+  font-size: 60px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: title;
+}
+
+.tour-threeSlide__block > p {
+  font-size: 38px;
+}
+
+.tour-threeSlide__block:nth-of-type(1) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: textBlock;
+  width: 800px;
+  height: 400px;
+}
+
+.tour-threeSlide__block:nth-of-type(1) > p > b {
+  font-size: 42px;
+}
+
+.tour-threeSlide__block:nth-of-type(1) > p > span {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.tour-threeSlide__block:nth-of-type(1) > p > b span {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.tour-threeSlide__block:nth-of-type(2) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: twoImg;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.tour-threeSlide__block:nth-of-type(2) > img {
+  width: 400px;
+  height: 500px;
+}
+
+.tour-threeSlide__block:nth-of-type(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: tambovNab;
+}
+
+.tour-threeSlide__block:nth-of-type(3) > img {
+  width: 400px;
+  height: 220px;
+}
+
+.tour-threeSlide__block:nth-of-type(4) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: soborPl;
+}
+
+.tour-threeSlide__block:nth-of-type(4) > img {
+  width: 400px;
+  height: 220px;
+}
+
+.tour-threeSlide__block:nth-of-type(5) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: soborPreo;
+}
+
+.tour-threeSlide__block:nth-of-type(5) > img {
+  width: 400px;
+  height: 220px;
+}
+
+.tour-threeSlide__block:nth-of-type(6) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: Nikol;
+}
+
+.tour-threeSlide__block:nth-of-type(6) > img {
+  width: 400px;
+  height: 220px;
 }
 
 * {

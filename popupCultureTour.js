@@ -4,7 +4,6 @@ popupTour.forEach((elem) => {
         let popup = document.querySelector(`[popup=${this.id}]`)
         popup.classList.add('active-page')
         let close = popup.querySelector('.hexagon__page-close')
-        
         close.style.display = 'block'
             
         close.addEventListener('click', function(e) {

@@ -16,9 +16,7 @@ $titleFontSize: 60px;
 .startSlide {
     
 }
-.anima-ascent {
-   
-}
+
 .startSlide__title {
     font-size: $titleFontSize;
 }
@@ -284,7 +282,7 @@ $textBoldSize: 42px;
 .tour-twoSlide {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr;
     grid-template-areas: "title title title"
                         "textBlock textBlock monument"
                         "rooms rooms card";
@@ -335,4 +333,85 @@ $textBoldSize: 42px;
     color: #fff;
     padding: 20px;
     font-weight: 900;
+}
+
+// 3 слайд - Культурно - исторический потенциал
+
+.tour-threeSlide {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "title title title"
+                         "textBlock twoImg twoImg"
+                         "tambovNab twoImg twoImg"
+                         "soborPl soborPreo Nikol";
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s all;
+    position: relative;
+    transform: translateY(0px);
+    background-color: #fff;
+    padding: 10px 20px 20px 20px;
+}
+.tour-threeSlide__title {
+    font-size: $titleFontSize;
+    grid-area: title;
+}
+.tour-threeSlide__block > img {
+}
+.tour-threeSlide__block > p {
+    font-size: $textSize;
+}
+.tour-threeSlide__block:nth-of-type(1) {
+    grid-area: textBlock;
+    width: 800px;
+    height: 400px;
+}
+.tour-threeSlide__block:nth-of-type(1) > p > b {
+    font-size: $textBoldSize;
+}
+.tour-threeSlide__block:nth-of-type(1) > p > span {
+    font-weight: bold;
+    font-size: 70px;
+}
+.tour-threeSlide__block:nth-of-type(1) > p > b span {
+    font-weight: bold;
+    font-size: 70px;
+}
+.tour-threeSlide__block:nth-of-type(2){
+    grid-area: twoImg;
+    justify-self: end;
+}
+.tour-threeSlide__block:nth-of-type(2) > img {
+    width: 400px;
+    height: 500px;
+}
+.tour-threeSlide__block:nth-of-type(3) {
+    grid-area: tambovNab;
+}
+.tour-threeSlide__block:nth-of-type(3) > img {
+    width: 400px;
+    height: 220px;
+}
+.tour-threeSlide__block:nth-of-type(4) {
+    grid-area: soborPl;
+}
+.tour-threeSlide__block:nth-of-type(4) > img {
+    width: 400px;
+    height: 220px;
+}
+.tour-threeSlide__block:nth-of-type(5) {
+    grid-area: soborPreo;
+}
+.tour-threeSlide__block:nth-of-type(5) > img {
+    width: 400px;
+    height: 220px;
+}
+.tour-threeSlide__block:nth-of-type(6) {
+    grid-area: Nikol;
+}
+.tour-threeSlide__block:nth-of-type(6) > img {
+    width: 400px;
+    height: 220px;
 }
