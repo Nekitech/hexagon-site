@@ -228,10 +228,35 @@ $textBoldSize: 42px;
 }
 .tour-oneSlide__block:nth-child(2) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "title title"
+                         "logo terra"
+                         "logo monuments";
     grid-column: 1 / span 3;
     grid-row: 1/span 2;
+    width: 900px;
+    gap:  100px;
+}
+.tour-oneSlide__item {
+    font-size: $textSize;
+}
+.tour-oneSlide__item > b{
+    font-size: calc(#{$textSize} + 10px);
+}
+.tour-oneSlide__title {
+    grid-area: title;
+    align-self: center;
+    
+}
+.tour-oneSlide__item:nth-child(2) {
+    grid-area: logo;
+}
+.tour-oneSlide__item:nth-child(3) {
+    grid-area: terra;
+}
+.tour-oneSlide__item:last-child {
+    grid-area: monuments;
 }
 
 .tour-oneSlide__block:nth-child(3) {
@@ -252,4 +277,62 @@ $textBoldSize: 42px;
 }
 [popup=popup-five] {
     padding: 0 300px;
+}
+
+// 2 слайд - Культурно - исторический потенциал
+
+.tour-twoSlide {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas: "title title title"
+                        "textBlock textBlock monument"
+                        "rooms rooms card";
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: 0.5s all;
+    position: relative;
+    transform: translateY(0px);
+    background-color: #fff;
+    padding: 10px 20px 20px 20px;
+}
+.tour-twoSlide__title{
+    grid-area: title;
+    font-size: $titleFontSize;
+    justify-self: center;
+
+}
+.tour-twoSlide__block > p {
+    font-size: $textSize;
+}
+.tour-twoSlide__block > img {
+    max-width: 540px;
+    max-height: 400px;
+}
+.tour-twoSlide__block {
+    grid-area: rooms;
+}
+.tour-twoSlide__block:first-child {
+    grid-area: textBlock;
+}
+.tour-twoSlide__block:nth-child(2){
+    grid-area: monument;
+}
+.tour-twoSlide__block:nth-child(3){
+    grid-area: textBlock;
+    align-self: center;
+}
+.tour-twoSlide__block:nth-child(4){
+    grid-area: monument;
+}
+.tour-twoSlide__block:last-child{
+    grid-area: card;
+    background-color: #5f497a;
+    width: 600px;
+    height: 400px;
+    font-size: 50px;
+    color: #fff;
+    padding: 20px;
+    font-weight: 900;
 }

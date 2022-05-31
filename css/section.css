@@ -309,16 +309,55 @@
 .tour-oneSlide__block:nth-child(2) {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 2fr;
-      grid-template-rows: 1fr 2fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "title title" "logo terra" "logo monuments";
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/span 2;
+  width: 900px;
+  gap: 100px;
+}
+
+.tour-oneSlide__item {
+  font-size: 38px;
+}
+
+.tour-oneSlide__item > b {
+  font-size: calc(38px + 10px);
+}
+
+.tour-oneSlide__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: title;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.tour-oneSlide__item:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.tour-oneSlide__item:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: terra;
+}
+
+.tour-oneSlide__item:last-child {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: monuments;
 }
 
 .tour-oneSlide__block:nth-child(3) {
@@ -353,4 +392,92 @@
 
 [popup=popup-five] {
   padding: 0 300px;
+}
+
+.tour-twoSlide {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 2fr 2fr;
+      grid-template-columns: 1fr 2fr 2fr;
+      grid-template-areas: "title title title" "textBlock textBlock monument" "rooms rooms card";
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  position: relative;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  background-color: #fff;
+  padding: 10px 20px 20px 20px;
+}
+
+.tour-twoSlide__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: title;
+  font-size: 60px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.tour-twoSlide__block > p {
+  font-size: 38px;
+}
+
+.tour-twoSlide__block > img {
+  max-width: 540px;
+  max-height: 400px;
+}
+
+.tour-twoSlide__block {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: rooms;
+}
+
+.tour-twoSlide__block:first-child {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: textBlock;
+}
+
+.tour-twoSlide__block:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: monument;
+}
+
+.tour-twoSlide__block:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: textBlock;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.tour-twoSlide__block:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: monument;
+}
+
+.tour-twoSlide__block:last-child {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: card;
+  background-color: #5f497a;
+  width: 600px;
+  height: 400px;
+  font-size: 50px;
+  color: #fff;
+  padding: 20px;
+  font-weight: 900;
 }
