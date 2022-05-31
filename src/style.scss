@@ -88,7 +88,7 @@ body {
     width: $sizeIcon;
     height: $sizeIcon;
     position: absolute;
-    left: calc(#{$widthItem/2 - $sizeIcon/2});
+    left: calc(#{$widthItem}/2 - #{$sizeIcon}/2);
     top: calc(#{#{$heightItem}/2 - #{$sizeIcon}/2});
     z-index: 2;
 }
