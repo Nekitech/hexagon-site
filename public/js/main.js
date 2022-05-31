@@ -3,7 +3,6 @@ const colors = {
     'industry': '#2c92f2',
     'export': '#7fb7eb',
     'culture-tour': '#7febc2',
-    'prom-potential': '#9b7feb',
     'science-city': '#00C9EF',
     'agro': '#5BCBA4',
     'science-potential': '#00CCCC'
@@ -12,7 +11,7 @@ hexPages.forEach((elem) => {
     elem.addEventListener('click', function(e) {
         if(this.id == 'hexPage'){
             let page = document.getElementById(`${elem.getAttribute('sector')}`)
-
+            console.log(this)
             page.classList.add('active-page')
             page.style.backgroundColor = `${colors[elem.getAttribute('sector')]}`
             setTimeout(() => [
@@ -36,5 +35,38 @@ hexPages.forEach((elem) => {
                 e.stopPropagation()
             })
         }
+    })
+})
+
+let popupTour = document.querySelectorAll('.section-tour__block')
+popupTour.forEach((elem) => {
+    elem.addEventListener('click', function (e) {
+        let popup = document.querySelector(`[popup=${this.id}]`)
+        popup.classList.add('active-page')
+        let close = popup.querySelector('.hexagon__page-close')
+        close.style.display = 'block'
+            
+        close.addEventListener('click', function(e) {
+            popup.classList.remove('active-page')
+            close.style.display = 'none'
+            e.stopPropagation()
+        })
+    })
+})
+let blocksPopup = document.querySelectorAll('.startSlide__block')
+
+blocksPopup.forEach((elem) => {
+    elem.addEventListener('click', function (e) {
+        let popup = document.querySelector(`[popup=${this.id}]`)
+        popup.classList.add('active-page')
+        let close = popup.querySelector('.hexagon__page-close')
+        
+        close.style.display = 'block'
+            
+        close.addEventListener('click', function(e) {
+            popup.classList.remove('active-page')
+            close.style.display = 'none'
+            e.stopPropagation()
+        })
     })
 })
