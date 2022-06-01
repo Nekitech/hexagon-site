@@ -56,13 +56,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
 
-    width: 0;
-    height: 0;
-    opacity: 0;
-    transition: 0.5s all;
-    position: relative;
-    transform: translateY(0px);
-    background-color: #fff;
+    @include startStyleAnima
 }
 
 .tour-oneSlide__block > img {
@@ -150,13 +144,7 @@
     grid-template-areas: "title title title"
                         "textBlock textBlock monument"
                         "rooms rooms card";
-    width: 0;
-    height: 0;
-    opacity: 0;
-    transition: 0.5s all;
-    position: relative;
-    transform: translateY(0px);
-    background-color: #fff;
+    @include startStyleAnima;
     padding: 10px 20px 20px 20px;
 }
 .tour-twoSlide__title{
@@ -209,13 +197,7 @@
                          "textBlock twoImg twoImg"
                          "tambovNab twoImg twoImg"
                          "soborPl soborPreo Nikol";
-    width: 0;
-    height: 0;
-    opacity: 0;
-    transition: 0.5s all;
-    position: relative;
-    transform: translateY(0px);
-    background-color: #fff;
+    @include startStyleAnima;
     padding: 10px 20px 20px 20px;
 }
 .tour-threeSlide__title {
@@ -291,13 +273,7 @@
                          "leftSide oneBlock"
                          "leftSide twoBlock";
 
-    width: 0;
-    height: 0;
-    opacity: 0;
-    transition: 0.5s all;
-    position: relative;
-    transform: translateY(0px);
-    background-color: #fff;
+    @include startStyleAnima;
     padding: 10px 20px 20px 20px;
 }
 .tour-fourSlide__title {
