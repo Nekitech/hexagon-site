@@ -10,19 +10,21 @@
 .startSlide__title {
     font-size: $sizeSlidesTitle;
     color: $colorSlidesTitle;
+    text-align: center;
 }
 .startSlide__blocks {
     display: flex;
+    margin-top: 100px;
 }
 .startSlide__block {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: calc( #{-$widthHexStartSlide} * 0.26);
+    margin-left: $mgLeftHexagon;
 }
 .startSlide__block:nth-of-type(2n){
     flex-direction: column-reverse;
-    margin-top: calc(#{$heightHexStartSlide} / 2 - 20px);
+    margin-top: calc(#{$heightHexStartSlide} / 2 - 136px);
 }
 .startSlide__hexagon-outer {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -38,8 +40,12 @@
     height: inherit;
 }
 .startSlide__img {
+    width: 100%;
+    height: 100%;
 }
 .startSlide__text {
     color: $textColor;
     font-size: $textSize;
+    // width: $mgLeftHexagon;
+
 }

@@ -1,11 +1,12 @@
-$textSize: 38px;
+$textSize: 42px;
 $textColor: #fff;
 $textBoldSize: 42px;
 
-$sizeSlidesTitle: 40px;
+$sizeSlidesTitle: 80px;
 $colorSlidesTitle: #fff;
 
 $maxWidthSlide: calc(100% - 100px);
 
-$widthHexStartSlide: 440px;
+$widthHexStartSlide: 540px;
 $heightHexStartSlide: calc(#{$widthHexStartSlide} * 0.8);
+$mgLeftHexagon: calc( #{-$widthHexStartSlide} * 0.23);
