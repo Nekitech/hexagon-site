@@ -27,14 +27,14 @@
 [tag=science-city] .bar {
     width: 80px;
 }
-[tag=prom-potential] {
+[tag=agro] {
     top: 800px;
     left: 316px;
+    width: 200px;
 } 
-[tag=agro] {
-    top: 810px;
-    left: 750px;
-} 
+[tag=agro] .bar {
+    width: 100px;
+}
 
 .tag {
     position: absolute;

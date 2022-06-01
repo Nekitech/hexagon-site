@@ -1,0 +1,18 @@
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 160px;
+    
+}
+.right-side__gerb {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 40px;
+}
+.right-side__title {
+    font-size: 46px;
+    color: #fff;
+}

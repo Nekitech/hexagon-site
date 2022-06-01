@@ -20,6 +20,8 @@ body {
     
 }
 
+@import 'tags/tags.scss';
+@import 'rightSide/rightSide.scss';
 @import 'hexLayout/hexLayout.scss';
 @import 'SEPotential/sciencePotential.scss';
 @import 'CTPotential/cultureTour.scss';

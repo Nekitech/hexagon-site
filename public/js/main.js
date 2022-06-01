@@ -11,7 +11,6 @@ hexPages.forEach((elem) => {
     elem.addEventListener('click', function(e) {
         if(this.id == 'hexPage'){
             let page = document.getElementById(`${elem.getAttribute('sector')}`)
-            console.log(this)
             page.classList.add('active-page')
             page.style.backgroundColor = `${colors[elem.getAttribute('sector')]}`
             setTimeout(() => [
@@ -38,9 +37,11 @@ hexPages.forEach((elem) => {
     })
 })
 
+
 let popupTour = document.querySelectorAll('.section-tour__block')
 popupTour.forEach((elem) => {
     elem.addEventListener('click', function (e) {
+        console.log(this)
         let popup = document.querySelector(`[popup=${this.id}]`)
         popup.classList.add('active-page')
         let close = popup.querySelector('.hexagon__page-close')

@@ -11,6 +11,8 @@ const csso = require('gulp-csso')
 const rename = require('gulp-rename')
 const concat = require('gulp-concat')
 const uglify = require('gulp-uglify')
+const imagemin = require('gulp-imagemin')
+const newer = require('gulp-newer')
 
 // Объединение html файлов
 const html = () => {
@@ -41,11 +43,22 @@ const js = () => {
         .pipe(dest('./public/js'))
 }
 
+// img
+const img = () => {
+    return src('./src/img/*.*')
+        .pipe(newer('./public/img'))
+        .pipe(imagemin({
+            verbose: true
+        }))
+        .pipe(dest('./public/img'))
+}
+
 // Наблюдение
 const watcher = () => {
     watch('./src/**/*.html', html).on('all', browserSync.reload)
     watch('./src/**/*.scss', scss).on('all', browserSync.reload)
-    watch('./src/**/*.js', scss).on('all', browserSync.reload)
+    watch('./src/**/*.js', js).on('all', browserSync.reload)
+    watch('./src/img/*.*', img).on('all', browserSync.reload)
 }
 
 // Удаление директории
@@ -68,10 +81,11 @@ exports.watch = watcher
 exports.clear = clear
 exports.scss = scss
 exports.js = js
+exports.img = img
 
 // Сборка
 exports.dev = series(
     clear,
-    parallel(html, scss, js),
+    parallel(html, scss, js, img),
     parallel(watcher, server)
 )
