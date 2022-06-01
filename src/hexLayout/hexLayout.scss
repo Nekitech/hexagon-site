@@ -81,13 +81,23 @@
 
 .active-page {
     z-index: 2; 
-    width: 100vw;
-    height: 100vh;
-    position: fixed; 
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed !important; 
     top: 0; 
     left: 0; 
-    display: flex ;
-    opacity: 1 ;
-    transition: 0.5s all ;
-    background-color: $bgPage;
+    display: flex !important;
+    opacity: 1 !important;
+    transition: 0.5s all !important;
+    background-color: $bgPage !important;
+}
+
+
+// Удаленные гексагоны
+
+.hex-item:nth-of-type(n+5):nth-of-type(-n+7){
+    opacity: 0;
+}
+.hex-item:nth-of-type(13), .hex-item:nth-of-type(32), .hex-item:nth-of-type(33){
+    opacity: 0;
 }

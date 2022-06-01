@@ -1,0 +1,43 @@
+
+.scienceCity__one-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+
+}
+.hexagon__page-close {
+}
+.scienceCity__oneSlide__title {
+    font-size: $sizeSlidesTitle;
+    color: $colorSlidesTitle;
+}
+.scienceCity__oneSlide__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.hexagon-outer {
+}
+.hexagon-inner {
+}
+.scienceCity__oneSlide__text-img {
+    width: 100%;
+    height: 150%;
+}
+.scienceCity__oneSlide__info-text {
+    color: $textColor;
+    font-size: $textSize;
+    width: 60%;
+}
+.scienceCity__oneSlide__info-text div {
+    border: 10px solid #fff;
+    padding: 10px;
+}
+.scienceCity__one-slide__hexagon-outer {
+    $widthHex: 600px;
+    width: $widthHex;
+    height: calcHeightHexSlide($widthHex);
+}

@@ -8,5 +8,5 @@ $colorSlidesTitle: #fff;
 $maxWidthSlide: calc(100% - 100px);
 
 $widthHexStartSlide: 540px;
-$heightHexStartSlide: calc(#{$widthHexStartSlide} * 0.8);
+$heightHexStartSlide: #{calcHeightHexSlide($widthHexStartSlide)};
 $mgLeftHexagon: calc( #{-$widthHexStartSlide} * 0.23);
