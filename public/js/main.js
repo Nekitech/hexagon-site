@@ -14,19 +14,19 @@ hexPages.forEach((elem) => {
             page.classList.add('active-page')
             page.style.backgroundColor = `${colors[elem.getAttribute('sector')]}`
             setTimeout(() => [
-                page.style.backgroundColor = '#fff'
+                page.style.backgroundColor = '#000a19'
             ], 500)
             let close = page.querySelector('.hexagon__page-close')
-            let blocks = page.querySelectorAll('.anima-ascent')
+            let blocksAnima = page.querySelectorAll('.anima-ascent')
             close.style.display = 'block'
-            blocks.forEach((el) => {
+            blocksAnima.forEach((el) => {
                 el.style.transform = 'translateY(0px)'
                 el.style.opacity = '100%'
             })
                 
             close.addEventListener('click', function(e) {
                 page.classList.remove('active-page')
-                blocks.forEach((el) => {
+                blocksAnima.forEach((el) => {
                     el.style.transform = 'translateY(300%)'
                     el.style.opacity = '0'
                 })

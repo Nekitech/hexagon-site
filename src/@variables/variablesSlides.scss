@@ -1,4 +1,11 @@
 $textSize: 38px;
+$textColor: #fff;
 $textBoldSize: 42px;
-$widthSection: calc(100%  - 140px);
-$titleFontSize: 60px;
+
+$sizeSlidesTitle: 40px;
+$colorSlidesTitle: #fff;
+
+$maxWidthSlide: calc(100% - 100px);
+
+$widthHexStartSlide: 440px;
+$heightHexStartSlide: calc(#{$widthHexStartSlide} * 0.8);

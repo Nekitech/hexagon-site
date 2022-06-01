@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Hexagon</title>
 </head>
@@ -110,9 +110,9 @@
     <img src="img/Gorod.png" class="right-side__gerb" alt="">
     <h1 class="right-side__title">ТАМБОВСКАЯ<br> ОБЛАСТЬ</h1>
 </div>
-    <div class="hexagon__page" id="culture-tour">
+    <div class="hexagon__page cultureTour" id="culture-tour">
     <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
-    <section class="section-tour anima-ascent">
+    <section class="cultureTour__start-slide anima-ascent">
         <h3 class="section-tour__title">Культурно-туристический потенциал</h3>
         <div class="section-tour__block" id="popup-five">
             <img src="img/oleni.jpg" alt="" class="sectiontour__img">
@@ -135,7 +135,7 @@
             <p class="section-tour__text">Край дворянских усадеб</p>
         </div>
     </section>
-    <section class="tour-oneSlide" popup="popup-five">
+    <section class="cultureTour__one-slide" popup="popup-five">
         <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
         <div class="tour-oneSlide__block">
             <h3 class="tour-oneSlide__title">Экологически чистый регион</h3>
@@ -167,7 +167,7 @@
             <img src="img/forest-4.jpg" alt="">
         </div>
     </section>
-    <section class="tour-twoSlide" popup="popup-seven">
+    <section class="cultureTour__two-slide" popup="popup-seven">
         <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
         <h3 class="tour-twoSlide__title">Здесь жил и вдохновлялся Сергей Рахманинов</h3>
         <div class="tour-twoSlide__block">
@@ -196,7 +196,7 @@
             2023 год объявлен годом празднования 150-летия со дня рождения Сергея Рахманинова
         </div>
     </section >
-    <section class="tour-threeSlide" popup="popup-eight">
+    <section class="cultureTour__three-slide" popup="popup-eight">
         <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
         <h3 class="tour-threeSlide__title">Благодатный край для паломничества</h3>
         <div class="tour-threeSlide__block">
@@ -233,7 +233,7 @@
             <p>Никольская церковь, г. Моршанск</p>
         </div>
     </section >
-    <section class="tour-fourSlide" popup="popup-nine">
+    <section class="cultureTour__four-slide" popup="popup-nine">
         <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
         <h3 class="tour-fourSlide__title">Край дворянских усадеб</h3>
         <div class="tour-fourSlide__block">
@@ -263,10 +263,10 @@
     <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
     
 </div>
-    <div class="hexagon__page" id="science-potential">
+    <div class="hexagon__page sciencePotential" id="science-potential">
     <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
     <h3 class="hexagon__page-title">Научно-образовательный комплекс</h3>
-    <div class="hexagon__blocks anima-ascent">
+    <section class="sciencePotential__start-slide anima-ascent">
         <div class="hexagon__block">
             <img src="img/tgtu.svg" alt="" class="hexagon__block-logo">
             <p class="hexagon__text-page">
@@ -351,36 +351,52 @@
 
             </p>
         </div>
-    </div>
+    </section>
 </div>
-    <div class="hexagon__page" id="science-city">
+    <div class="hexagon__page scienceCity" id="science-city">
     <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
-    <section class="section startSlide anima-ascent">
+    <section class="startSlide scienceCity__start-slide">
         <h3 class="startSlide__title">Город-наукоград Мичуринск</h3>
         <div class="startSlide__blocks">
             <div class="startSlide__block" id="popup-one">
-                <img src="img/Michurin.jpg" alt="" class="startSlide__img">
+                <div class="startSlide__hexagon-outer">
+                    <div class="startSlide__hexagon-inner">
+                        <img src="img/Michurin.jpg" alt="" class="startSlide__img">
+                    </div>
+                </div>
                 <p class="startSlide__text">«Мастерская» Мичурина
                 </p>
             </div>
             <div class="startSlide__block" id="popup-two">
-                <img src="img/tubicks.jpg" alt="" class="startSlide__img">
+                <div class="startSlide__hexagon-outer">
+                    <div class="startSlide__hexagon-inner">
+                        <img src="img/tubicks.jpg" alt="" class="startSlide__img">
+                    </div>
+                </div>
                 <p class="startSlide__text">Питание для космонавтов
                 </p>
             </div>
             <div class="startSlide__block">
-                <img src="img/factory.jpg" alt="" class="startSlide__img">
+                <div class="startSlide__hexagon-outer">
+                    <div class="startSlide__hexagon-inner">
+                        <img src="img/factory.jpg" alt="" class="startSlide__img">
+                    </div>
+                </div>
                 <p class="startSlide__text">Технологии для АПК
                 </p>
             </div>
             <div class="startSlide__block">
-                <img src="img/build.jpg" alt="" class="startSlide__img">
+                <div class="startSlide__hexagon-outer">
+                    <div class="startSlide__hexagon-inner">
+                        <img src="img/build.jpg" alt="" class="startSlide__img">
+                    </div>
+                </div>
                 <p class="startSlide__text">Кузница кадров
                 </p>
             </div>
         </div>
     </section>
-    <section class="section oneSlide" popup="popup-one">
+    <!-- <section class="scienceCity__one-slide" popup="popup-one">
         <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
         <h3 class="oneSlide__title">«Мастерская» Мичурина</h3>
         <div class="oneSlide__info">
@@ -417,7 +433,7 @@
 
         </div>
     </section>
-    <section class="section twoSlide" popup="popup-two">
+    <section class="scienceCity__two-slidee" popup="popup-two">
         <img src="img/close-svgrepo-com.svg" class="hexagon__page-close"></img>
         <div class="twoSlide__space-eat">
             <div class="twoSlide__left-side">
@@ -450,7 +466,7 @@
                 <img src="img/space-eat-two.jpg" alt="" class="twoSlide__image-space-eat">
             </div>
         </div>
-    </section>
+    </section> -->
        
 </div>
     <div class="hexagon__page" id="agro">
