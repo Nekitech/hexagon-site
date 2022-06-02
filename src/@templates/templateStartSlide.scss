@@ -33,6 +33,8 @@
     align-items: center;
     margin-left: $mgLeftHexagon;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 .startSlide__block:nth-of-type(2n){
     flex-direction: column-reverse;

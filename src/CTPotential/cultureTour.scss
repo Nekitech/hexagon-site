@@ -114,3 +114,119 @@
     }
 }
 
+// Культурно - исторический потенциал 3 слайд
+
+.cultureTour__three-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+    .cultureTour__three-slide__rah {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 180px;
+    }
+    .cultureTour__three-slide__left-side {
+    }
+    .culturetour__three-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .culturetour__three-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .cultureTour__three-slide__right-side {
+    }
+    .culturetour__three-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .culturetour__three-slide__hexagon-outer:nth-of-type(2){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .culturetour__three-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    
+    .culturetour__three-slide__hexagon-inner {
+    }
+    
+    .cultureTour__three-slide__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//Культурно - исторический потенциал 4 слайд
+
+.cultureTour__four-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    $widthHex: 340px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+
+    .culturetour__four-slide__left-side {
+        
+    }
+    .culturetour__four-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .culturetour__four-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+        margin-top: 40px;
+    }
+    .culturetour__four-slide__right-side {
+        height: 90vh;
+    }
+    .culturetour__four-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .culturetour__four-slide__hexagon-outer:nth-of-type(2){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .culturetour__four-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex}); 
+    }
+    .culturetour__four-slide__hexagon-outer:nth-of-type(4) {
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*1.5 + 2*#{$mgHex});
+    }
+    .culturetour__four-slide__hexagon-outer:nth-of-type(5){
+        position: relative;
+        top: calc(#{-$heightHex}*2 + 2*#{$mgHex}); 
+    }
+    .culturetour__four-slide__hexagon-outer:nth-of-type(6) {
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*2.5 + 4*#{$mgHex});
+    }
+    
+    
+    .cultureTour__four-slide__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
