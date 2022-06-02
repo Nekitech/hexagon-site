@@ -236,7 +236,7 @@ body {
   width: 80px;
   height: 80px;
   position: absolute;
-  right: 80px;
+  right: 30px;
   top: 20px;
   cursor: pointer;
   z-index: 2;
@@ -410,6 +410,144 @@ body {
 .sciencePotential__start-slide__text {
   font-size: calc(42px - 10px);
   color: #fff;
+}
+
+.cultureTour__one-slide {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+  position: relative;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 40px;
+}
+.cultureTour__one-slide .culturetour__one-slide__title {
+  font-size: 80px;
+  color: #fff;
+}
+.cultureTour__one-slide .culturetour__one-slide__item {
+  color: #fff;
+  font-size: 42px;
+}
+.cultureTour__one-slide .culturetour__one-slide__item > p {
+  font-size: 42px;
+  color: #fff;
+}
+.cultureTour__one-slide .culturetour__one-slide__right-side {
+  height: 90vh;
+}
+.cultureTour__one-slide .culturetour__one-slide__hexagon-outer {
+  width: 450px;
+  height: 360px;
+}
+.cultureTour__one-slide .culturetour__one-slide__hexagon-outer:nth-of-type(2) {
+  margin-left: calc(450px - 450px/4 + 20px);
+  position: relative;
+  top: calc(-360px/2 + 20px);
+}
+.cultureTour__one-slide .culturetour__one-slide__hexagon-outer:nth-of-type(3) {
+  position: relative;
+  top: calc(-360px + 20px);
+}
+.cultureTour__one-slide .culturetour__one-slide__hexagon-outer:nth-of-type(4) {
+  margin-left: calc(450px - 450px/4 + 20px);
+  position: relative;
+  top: calc(-360px*1.5 + 2*20px);
+}
+.cultureTour__one-slide .cultureTour__one-slide__img {
+  width: 100%;
+  height: 100%;
+}
+
+.cultureTour__two-slide {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+  position: relative;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 40px;
+}
+.cultureTour__two-slide .cultureTour__two-slide__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90%;
+  margin: 0 20px;
+}
+.cultureTour__two-slide .culturetour__two-slide__hexagon-outer {
+  width: 350px;
+  height: 280px;
+  margin-bottom: 10px;
+}
+.cultureTour__two-slide .culturetour__one-slide__hexagon-outer--move {
+  left: calc(350px - 350px/4 + 0px);
+  position: relative;
+  top: calc(-280px/2 + 0px);
+}
+.cultureTour__two-slide .cultureTour__two-slide__img {
+  width: 100%;
+  height: 100%;
+}
+.cultureTour__two-slide .cultureTour__two-slide__title {
+  font-size: calc(80px - 10px);
+  color: #fff;
+}
+.cultureTour__two-slide .cultureTour__two-slide__img-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cultureTour__two-slide .cultureTour__two-slide__img-block img {
+  width: 300px;
+  height: 400px;
+}
+.cultureTour__two-slide .cultureTour__two-slide__text-img {
+  color: #fff;
+  font-size: calc(42px - 2px);
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+.cultureTour__two-slide .cultureTour__two-slide__info {
+  color: #fff;
+  font-size: 42px;
 }
 
 .scienceCity__one-slide {
