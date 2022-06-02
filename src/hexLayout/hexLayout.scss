@@ -26,6 +26,7 @@
     background: $borderColor;
     margin-bottom: calc(#{$m} - #{$widthItem} * 0.291);
     position: relative;
+    cursor: pointer;
     
 }
 .hex-item::after {
@@ -74,6 +75,7 @@
     position: absolute;
     right: 80px;
     top: 20px;
+    cursor: pointer;
 }
 .hexagon__page::-webkit-scrollbar {
     width: 0;
