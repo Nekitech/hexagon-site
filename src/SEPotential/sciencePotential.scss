@@ -1,0 +1,31 @@
+.sciencePotential__start-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sciencePotential__start-slide__title {
+    font-size: $sizeSlidesTitle;
+    color: $colorSlidesTitle;
+}
+.sciencePotential__start-slide__blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.sciencePotential__start-slide__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    border: 4px solid #fff;
+    padding: 5px;
+}
+.sciencePotential__start-slide__logo {
+    width: 120px;
+    height: 120px;
+}
+.sciencePotential__start-slide__text {
+    font-size: calc(#{$textSize} - 10px);
+    color: $textColor;
+}
