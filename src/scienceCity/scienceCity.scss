@@ -124,9 +124,10 @@
     
     }
     .scienceCity__three-slide__left-side {
+        height: 90%;
     }
     .scienceCity__three-slide__text {
-        font-size: $textSize;
+        font-size: calc(#{$textSize} - 4px);
         color: $textColor;
     }
     .scienceCity__three-slide__right-side {
@@ -145,14 +146,75 @@
         top: calc(#{-$heightHex} + #{$mgHex});
     }
     
-    .scienceCity__three-slide__img-tech-apk {
+    .scienceCity__three-slide__img {
         width: 131%;
         height: 128%;
         position: relative;
         left: -104px;
     }
-    .scienceCity__three-slide__img-tech-apk:nth-of-type(2){
-        width: 150%;
+    
+}
+
+
+// Наукоград - 4 Слайд
+
+.scienceCity__four-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+
+    $widthHex: 400px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 10px;
+
+
+    .scienceCity__four-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .scienceCity__four-slide__tech-kadr {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    .scienceCity__four-slide__left-side {
+    }
+    .scienceCity__four-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .scienceCity__four-slide__right-side {
+    }
+    .scienceCity__four-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    
+    .scienceCity__four-slide__hexagon-inner {
+    }
+
+    .scienceCity__four-slide__hexagon-outer:nth-of-type(2n){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .scienceCity__four-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    
+    .scienceCity__four-slide__img {
+        width: 100%;
+        height: 100%;
+        // position: relative;
+        // left: -104px;
     }
 }
+
+
+
+
 
