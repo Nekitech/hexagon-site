@@ -1,4 +1,5 @@
-let popupNav = document.querySelectorAll('.startSlide__block')
+let popupNav = [...document.querySelectorAll('.startSlide__block'),
+                 ...document.querySelectorAll('.industry__block')]
 popupNav.forEach((elem) => {
     elem.addEventListener('click', function (e) {
         let popup = document.querySelector(`[popup=${this.id}]`)
@@ -11,5 +12,5 @@ popupNav.forEach((elem) => {
             close.style.display = 'none'
             e.stopPropagation()
         })
-    })
+    }) 
 })
