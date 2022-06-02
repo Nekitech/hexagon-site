@@ -38,6 +38,7 @@ hexPages.forEach((elem) => {
 })
 
 
+
 let popupTour = document.querySelectorAll('.startSlide__block')
 popupTour.forEach((elem) => {
     elem.addEventListener('click', function (e) {
@@ -53,6 +54,7 @@ popupTour.forEach((elem) => {
         })
     })
 })
+
 let blocksPopup = document.querySelectorAll('.startSlide__block')
 
 blocksPopup.forEach((elem) => {
