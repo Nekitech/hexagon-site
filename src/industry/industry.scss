@@ -1,0 +1,49 @@
+.industry__start-slide {
+
+    $widthHex: 320px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+    .industry__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        text-align: center;
+    }
+    .industry__blocks {
+    }
+    .industry__one-row {
+        display: flex;
+    }
+    .industry__two-row {
+        display: flex;
+    }
+    .industry__block {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .industry__hexagon-inner {
+    }
+    .industry__hexagon-outer {
+        
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .industry__block:nth-of-type(n):nth-child(-n+4) {
+        flex-direction: column-reverse;
+    }
+    .industry__block:nth-of-type(2n){
+        top: calc(#{$heightHex}/2 + #{$mgHex});
+        // left: calc( #{$widthHex} + #{$mgHex});
+
+    }
+    .industry__img {
+        width: 100%;
+        height: 100%;
+    }
+    .industry__text {
+        font-size: calc(#{$textSize} - 6px);
+        color: $textColor;
+    }
+   
+}
