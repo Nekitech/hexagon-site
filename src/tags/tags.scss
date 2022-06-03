@@ -59,7 +59,7 @@
     width: fit-content;
     padding: 10px 15px;
     height: fit-content;
-    background-color: #e0dedc;
+    background-color: transparent;
 
     display: flex;
     align-items: center;
@@ -67,8 +67,9 @@
     border-radius: 20px;
 }
 .tag__text {
-    color: #000;
+    color: #fff;
     font-size: 16px;
+    font-weight: 700;
     text-transform: uppercase
     
 }

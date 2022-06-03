@@ -93,7 +93,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #e0dedc;
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,8 +107,9 @@ body {
 }
 
 .tag__text {
-  color: #000;
+  color: #fff;
   font-size: 16px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
