@@ -68,18 +68,29 @@
     .industry__one-slide__left-side {
     }
     .industry__one-slide__title {
-        font-size: $sizeSlidesTitle;
+        font-size: calc(#{$sizeSlidesTitle} - 25px);
         color: $colorSlidesTitle;
+        position: relative;
+        top: -300px;
     }
     .industry__one-slide__subtitle {
-        font-size: $sizeSlidesTitle;
+        font-size: calc(#{$sizeSlidesTitle} - 30px);
         color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+        position: relative;
+        top: -274px;
     }
+    
     .industry__one-slide__text {
-        font-size: $textSize;
-        color: $textColor;
+        font-size: calc(42px - 6px);
+        color: #fff;
+        position: relative;
+        left: 87px;
+        top: -52px;
     }
     .industry__one-slide__right-side {
+        margin-top: 250px;
     }
     .industry__one-slide__hexagon-outer {
         width: $widthHex;
@@ -90,13 +101,38 @@
         position: relative;
         top: calc(#{-$heightHex}/2 + #{$mgHex});
     }
-    
-    
+    .industry__one-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .industry__one-slide__hexagon-inner-text {
+        background-color: $bg;
+    }
+    .industry__one-slide__hex-text {
+        color: #fff;
+        position: relative;
+        top: 88px;
+        font-size: 34px;
+        text-align: center;
+    }
     .industry__one-slide__image {
         width: 100%;
         height: 100%;
     
     } 
+    .industry__inderline-text {
+        position: relative;
+        top: -314px;
+        left: -1069px;
+        transform: scale(1.5);
+    }
+    .industry__one-slide__info {
+        position: relative;
+        top: 206px;
+        left: -1687px;
+        font-size: calc(#{$sizeSlidesTitle} - 25px);
+        color: $colorSlidesTitle;
+    }
 }
 
 
@@ -211,8 +247,6 @@
     $heightHex: calcHeightHexSlide($widthHex);
     $mgHex: 15px;
 
-    .industry__four-slide__left-side {
-    }
     .industry__four-slide__title {
         font-size: $sizeSlidesTitle;
         color: $colorSlidesTitle;
