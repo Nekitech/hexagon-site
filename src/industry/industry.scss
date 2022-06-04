@@ -65,16 +65,14 @@
     $heightHex: calcHeightHexSlide($widthHex);
     $mgHex: 15px;
 
-    .industry__one-slide__left-side {
-    }
     .industry__one-slide__title {
-        font-size: calc(#{$sizeSlidesTitle} - 25px);
+        font-size: calc(#{$sizeSlidesTitle});
         color: $colorSlidesTitle;
         position: relative;
         top: -300px;
     }
     .industry__one-slide__subtitle {
-        font-size: calc(#{$sizeSlidesTitle} - 30px);
+        font-size: calc(#{$sizeSlidesSubtitle});
         color: $colorSlidesTitle;
         border-left: 4px solid #fff;
         padding-left: 10px;
@@ -83,20 +81,20 @@
     }
     
     .industry__one-slide__text {
-        font-size: calc(42px - 6px);
+        font-size: $textSize;
         color: #fff;
         position: relative;
         left: 87px;
-        top: -52px;
+        top: -236px;
+        min-width: 500px;
     }
-    .industry__one-slide__right-side {
+    .industry__one-slide__hexagons {
         margin-top: 250px;
     }
     .industry__one-slide__hexagon-outer {
         width: $widthHex;
         height: $heightHex;
     }
-    
     .industry__one-slide__hexagon-outer:nth-of-type(2n){
         margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
         position: relative;
@@ -106,14 +104,12 @@
         position: relative;
         top: calc(#{-$heightHex} + #{$mgHex});
     }
-    .industry__one-slide__hexagon-inner-text {
-        background-color: $bg;
-    }
+    
     .industry__one-slide__hex-text {
         color: #fff;
         position: relative;
         top: 88px;
-        font-size: 34px;
+        font-size: calc(#{$sizeSlidesSubtitle} - 4px);
         text-align: center;
     }
     .industry__one-slide__image {
@@ -124,18 +120,20 @@
     .industry__inderline-text {
         position: relative;
         top: -314px;
-        left: -1069px;
+        left: -1110px;
         transform: scale(1.5);
     }
     .industry__one-slide__info {
         position: relative;
-        top: 206px;
-        left: -1687px;
-        font-size: calc(#{$sizeSlidesTitle} - 25px);
-        color: $colorSlidesTitle;
+        top: 110px;
+        left: -1734px;
+        font-size: calc(#{$sizeSlidesSubtitle});
+        color: $colorSlidesSubtitle;
     }
 }
-
+.industry__hexagon-inner-text {
+    background-color: $bg;
+}
 
 // Промышленность - 2 слайд
 
@@ -143,15 +141,14 @@
     @include startStyleAnima;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 40px;
 
     $widthHex: 450px;
     $heightHex: calcHeightHexSlide($widthHex);
-    $mgHex: 15px;
+    $mgHex: 25px;
 
-    .industry__two-slide__left-side {
-    }
+   
     .industry__two-slide__title {
         font-size: $sizeSlidesTitle;
         color: $colorSlidesTitle;
@@ -159,28 +156,57 @@
     .industry__two-slide__subtitle {
         font-size: $sizeSlidesTitle;
         color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+    }
+    .industry__two-slide__left-side {
+        min-width: 33%;
+        align-self: baseline;
+        margin-top: 142px;
     }
     .industry__two-slide__text {
         font-size: $textSize;
         color: $textColor;
     }
-    .industry__two-slide__right-side {
+    .industry__two-slide__hexagons {
+        margin-top: 500px;
     }
     .industry__two-slide__hexagon-outer {
         width: $widthHex;
         height: $heightHex;
     }
-    .industry__two-slide__hexagon-outer:nth-of-type(2n){
+    .industry__two-slide__hexagon-outer:nth-of-type(2){
         margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
         position: relative;
         top: calc(#{-$heightHex}/2 + #{$mgHex});
     }
-    .industry__two-slide__hexagon-inner {
+    .industry__two-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+        
     }
-    
+    .industry__two-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+    }
     .industry__two-slide__image {
         width: 100%;
         height: 100%;
+    }
+    .industry__two-slide__info{
+        position: relative;
+        top: 20px;
+        left: -1407px;
+        color: #fff;
+        font-size: $sizeSlidesSubtitle;
+    }
+    .industry__two-slide__hex-text {
+        color: $textColor;
+        position: relative;
+        top: 119px;
+        font-size: $textSize;
+        text-align: center;
     }
 }
 
@@ -199,6 +225,9 @@
     $mgHex: 15px;
 
     .industry__three-slide__left-side {
+        min-width: 500px;
+        align-self: flex-start;
+        margin-top: 50px;
     }
     .industry__three-slide__title {
         font-size: $sizeSlidesTitle;
@@ -207,13 +236,37 @@
     .industry__three-slide__subtitle {
         font-size: $sizeSlidesTitle;
         color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
     }
     .industry__three-slide__text {
         font-size: $textSize;
         color: $textColor;
     }
-    .industry__three-slide__right-side {
-        margin-top: 100px;
+    .industry__three-slide__text:nth-of-type(1){
+        min-width: 250px;
+        position: relative;
+        top: -257px;
+        left: 273px;
+    }
+    .industry__three-slide__text:nth-of-type(2) {
+        
+        position: relative;
+        top: 420px;
+        left: -1205px;
+        min-width: 450px;
+    }
+    .industry__three-slide__text:nth-of-type(3) {
+        
+        position: relative;
+        top: 330px;
+        left: -380px;
+    }
+    .industry__three-slide__hexagons {
+        margin-top: 300px;
+        position: relative;
+        top: 78px;
+        left: 215px;
     }
     .industry__three-slide__hexagon-outer {
         width: $widthHex;
@@ -228,11 +281,46 @@
         position: relative;
         top: calc(#{-$heightHex} + #{$mgHex});
     }
+    .industry__three-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+    }
     .industry__three-slide__image {
         width: 100%;
         height: 100%;
     }
+    .industry__three-slide__info {
+        position: relative;
+        top: 20px;
+        left: -2166px;
+        color: $colorSlidesSubtitle;
+        font-size: $sizeSlidesSubtitle;
+        min-width: 550px;
+    }
+    .industry__inderline-text {
+        
+    }
+    .industry__inderline-text--one {
+        top: -329px;
+        left: -1352px;
+        transform: scale(0.7);
+        position: relative;
+    }
+    .industry__inderline-text--two {
+        top: 228px;
+        left: -1507px;
+        transform: scale(0.7);
+        position: relative;
+    }
+    .industry__inderline-text--three {
+        top: 270px;
+        left: -2636px;
+        transform: rotate(180deg) scale(0.7);
+        position: relative;
+    }
+    
 }
+
 
 
 // Промышленность - 4 слайд
@@ -247,7 +335,11 @@
     $widthHex: 450px;
     $heightHex: calcHeightHexSlide($widthHex);
     $mgHex: 15px;
-
+    .industry__four-slide__left-side {
+        min-width: 600px;
+        align-self: flex-start;
+        margin-top: 50px;
+    }
     .industry__four-slide__title {
         font-size: $sizeSlidesTitle;
         color: $colorSlidesTitle;
@@ -255,13 +347,32 @@
     .industry__four-slide__subtitle {
         font-size: $sizeSlidesTitle;
         color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
     }
     .industry__four-slide__text {
         font-size: $textSize;
         color: $textColor;
+        position: relative;
     }
-    .industry__four-slide__right-side {
-        margin-top: 100px;
+    .industry__four-slide__text--one {
+        top: -253px;
+        left: 15px;
+        width: 300px;
+    }
+    .industry__four-slide__text--two {
+        top: -39px;
+        left: -1444px;
+        width: 320px;
+    }
+    .industry__four-slide__text--three {
+        top: 400px;
+        left: -1687px;
+        min-width: 730px;
+    }
+    .industry__four-slide__hexagons {
+        margin-top: 400px;
+        margin-left: 150px;
     }
     .industry__four-slide__hexagon-outer {
         width: $widthHex;
@@ -276,11 +387,53 @@
         position: relative;
         top: calc(#{-$heightHex} + #{$mgHex});
     }
-    
+    .industry__four-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+    }
+    .industry__four-slide__info {
+        position: absolute;
+        top: 300px;
+        left: 40px;
+        width: 301px;
+        color: $colorSlidesSubtitle;
+        font-size: $sizeSlidesSubtitle;
+        
+    }
 
     .industry__four-slide__image {
         width: 100%;
         height: 100%;
+    }
+    .industry__four-slide__inner-text {
+        background-color: $bg;
+    }
+    .industry__four-slide__hex-text {
+        color: $textColor;
+        position: relative;
+        top: 119px;
+        font-size: $textSize;
+        text-align: center;
+    }
+    .industry__inderline-text--one {
+        top: -305px;
+        left: -2358px;
+        transform: scale(0.7);
+        position: relative;
+
+    }
+    .industry__inderline-text--two {
+        top: -348px;
+        left: -1771px;
+        transform: scale(0.6);
+        position: relative;
+        
+    }
+    .industry__inderline-text--three {
+        top: 270px;
+        left: -2636px;
+        transform: rotate(180deg) scale(0.7);
+        position: relative;
     }
 }
 
