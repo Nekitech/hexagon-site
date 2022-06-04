@@ -96,6 +96,7 @@
         width: $widthHex;
         height: $heightHex;
     }
+    
     .industry__one-slide__hexagon-outer:nth-of-type(2n){
         margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
         position: relative;
