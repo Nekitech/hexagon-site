@@ -101,34 +101,36 @@
 
 //Агропромышленный комплекс - 1 слайд
 
-.agro__twoSlide {
+.agro__two-slide {
     @include startStyleAnima;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
 
-    $widthItem: 220px;
+    $widthItem: 450px;
     $heightItem: calc(#{$widthItem} * 1.1547);
     $m: 0px; 
-    $f: calc(#{$widthItem} * 1.732 + 4 * #{$m} - 1px);
-    .agro__twoSlide__maslo {
+    $f: calc(#{$widthItem} * 1.732 + 4 * 
+    #{$m} - 1px);
+    .agro__two-slide__maslo {
         display:flex;
     } 
-    .agro__twoSlide__hex-layout {
+    .agro__two-slide__hex-layout {
         position: relative;
         left: 0px;
         top: 0px;
         font-size: 0;
     }
-    .agro__twoSlide__hex-layout:before {
+    .agro__two-slide__hex-layout:before {
         content: "";
         width: calc(#{$widthItem}/2 + #{$m});
         float: left;
         height: 120%;
-        shape-outside: repeating-linear-gradient(#0000 0 calc(#{$f} - 3px), red 0 #{$f} );
+        shape-outside: repeating-linear-gradient(#0000 0 calc(#{$f} - 3px),
+         red 0 #{$f} );
     }
-    .agro__twoSlide__hex-item {
+    .agro__two-slide__hex-item {
         display: inline-block;
         font-size:initial;
         clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
@@ -136,11 +138,12 @@
         margin: #{$m};
         height: #{$heightItem}; 
         background: $borderColor;
-        margin-bottom: calc(#{$m} - #{$widthItem} * 0.291);
+        margin-bottom: calc(#{$m} - #{$widthItem}
+         * 0.291);
         position: relative;
         cursor: pointer;
     }
-    .agro__twoSlide__hex-item:after {
+    .agro__two-slide__hex-item:after {
         content: '';
         position: absolute;
         clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
