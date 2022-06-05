@@ -13,3 +13,5 @@ $maxWidthSlide: calc(100% - 100px);
 $widthHexStartSlide: 460px;
 $heightHexStartSlide: #{calcHeightHexSlide($widthHexStartSlide)};
 $mgLeftHexagon: calc( #{-$widthHexStartSlide} * 0.23);
+
+$yellowBee: #ffc000;
