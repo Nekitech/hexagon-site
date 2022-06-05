@@ -438,6 +438,199 @@
 }
 
 
+//Промышленность - 5 слайд
 
 
+.industry__five-slide {
+    @include startStyleAnima;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+
+    .industry__five-slide__left-side {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .industry__five-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .industry__five-slide__subtitle {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+    }
+    .industry__five-slide__hexagons {
+        margin-left: 350px;
+        margin-top: 100px;
+    }
+    .industry__five-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .industry__five-slide__hexagon-outer:nth-of-type(2n){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .industry__five-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .industry__five-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+    }
+    
+    
+    .industry__five-slide__image {
+        width: 100%;
+        height: 100%;
+    }
+    .industry__five-slide__inner-text {
+        background-color: $bg;
+        
+    }
+    .industry__five-slide__hex-text {
+        color: $textColor;
+        position: relative;
+        top: 119px;
+        font-size: $textSize;
+        text-align: center;
+    }
+    .industry__five-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+        position: absolute;
+    }
+    .industry__five-slide__text--one {
+        width: 500px;
+        left: 200px;
+        top: 400px;
+    }
+    .industry__five-slide__text--two {
+        right: 50px;
+        top: 233px;
+        width: 250px;
+    }
+    .industry__five-slide__text--three {
+        width: 280px;
+        bottom: 40px;
+        left: 330px;
+    }
+    .industry__inderline-text--one {
+        top: 263px;
+        left: 484px;
+        transform: scale(0.7);
+        position: absolute;
+
+    }
+    .industry__inderline-text--two {
+        right: 312px;
+        top: 216px;
+        transform: scale(.6);
+        position: absolute;
+        
+    }
+    .industry__inderline-text--three {
+        bottom: 161px;
+        left: 596px;
+        transform: rotate(180deg) scale(0.7);
+        position: absolute;
+    }
+}
+
+//Промышленность - 6 слайд
+
+.industry__six-slide {
+    @include startStyleAnima;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+
+    .industry__six-slide__left-side {
+        margin-top: 50px;
+        margin-left: 20px;
+        width: 600px;
+    }
+    .industry__six-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .industry__six-slide__subtitle {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+    }
+    .industry__six-slide__hexagons {
+        // margin-left: 350px;
+        margin-top: 100px;
+    }
+    .industry__six-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .industry__six-slide__hexagon-outer:nth-of-type(2n){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .industry__six-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .industry__six-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+    }
+     
+    .industry__six-slide__image {
+        width: 100%;
+        height: 100%;
+    }
+    .industry__six-slide__inner-text {
+        background-color: $bg;
+        
+    }
+    .industry__six-slide__hex-text {
+        color: $textColor;
+        position: relative;
+        top: 119px;
+        font-size: $textSize;
+        text-align: center;
+    }
+    .industry__six-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+        position: absolute;
+    }
+    .industry__six-slide__text--one {
+        width: 500px;
+        left: 200px;
+        top: 400px;
+    }
+    .industry__six-slide__text--two {
+        right: 180px;
+        top: 233px;
+        width: 250px;
+    }
+    .industry__inderline-text--one {
+        top: 263px;
+        left: 404px;
+        transform: scale(0.7);
+        position: absolute;
+
+    }
+    .industry__inderline-text--two {
+        right: 400px;
+        top: 216px;
+        transform: scale(.6);
+        position: absolute;
+        
+    }
+}
 
