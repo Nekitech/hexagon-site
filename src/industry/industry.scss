@@ -1,6 +1,6 @@
 .industry__start-slide {
 
-    $widthHex: 320px;
+    $widthHex: 240px;
     $heightHex: calcHeightHexSlide($widthHex);
     $mgHex: 15px;
     .industry__title {
@@ -9,46 +9,145 @@
         text-align: center;
     }
     .industry__blocks {
-    }
-    .industry__one-row {
         display: flex;
-    }
-    .industry__two-row {
-        display: flex;
-    }
-    .industry__block {
-        position: relative;
-        display: flex;
-        align-items: center;
         flex-direction: column;
-        cursor: pointer;
+        margin-top: 200px;
+    }
+    
+    .industry__hexagon-outer:nth-of-type(1){
         position: relative;
-        z-index: 2;
+        top: calc(#{-$heightHex} + #{$mgHex});
     }
-    .industry__hexagon-inner {
+    .industry__hexagon-outer:nth-of-type(2){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + 15px);
+        position: relative;
+        top: calc(#{-$heightHex}*1.5 + 15px);
     }
+    .industry__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex}*2 + #{$mgHex});
+    }
+    .industry__hexagon-outer:nth-of-type(4){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*2.5 + #{$mgHex});
+    }
+    .industry__hexagon-outer:nth-of-type(5){
+        position: relative;
+        top: calc(#{-$heightHex}*3 + #{$mgHex});
+    }
+    .industry__hexagon-outer:nth-of-type(6){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*3.5 + #{$mgHex});
+    }
+    .industry__hexagon-outer:nth-of-type(7){
+        position: relative;
+        top: calc(#{-$heightHex}*4 + #{$mgHex});
+    }
+    .industry__hexagon-outer:nth-of-type(8){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*4.5 + #{$mgHex});
+    }
+    
     .industry__hexagon-outer {
-        
         width: $widthHex;
         height: $heightHex;
-    }
-    .industry__block:nth-of-type(n):nth-child(-n+4) {
-        flex-direction: column-reverse;
-    }
-    .industry__block:nth-of-type(2n){
-        top: calc(#{$heightHex}/2 + #{$mgHex});
-        // left: calc( #{$widthHex} + #{$mgHex});
-
+        margin-bottom: $mgHex;
     }
     .industry__img {
         width: 100%;
         height: 100%;
     }
     .industry__text {
-        font-size: calc(#{$textSize} - 6px);
+        font-size: $textSize;
         color: $textColor;
     }
-   
+    .industry__text:nth-of-type(1) {
+        position: absolute;
+        left: 340px;
+        top: 116px;
+    }
+    .industry__text:nth-of-type(2) {
+        position: absolute;
+        right: 380px;
+        top: 240px;
+    }
+    .industry__text:nth-of-type(3) {
+        position: absolute;
+        left: 340px;
+        top: 350px;
+    }
+    .industry__text:nth-of-type(4) {
+        position: absolute;
+        right: 380px;
+        top: 463px;
+    }
+    .industry__text:nth-of-type(5) {
+        position: absolute;
+        left: 340px;
+        top: 573px;
+    }
+    .industry__text:nth-of-type(6) {
+        position: absolute;
+        right: 380px;
+        top: 686px;
+    }
+    .industry__text:nth-of-type(7) {
+        position: absolute;
+        left: 340px;
+        top: 796px;
+    }
+    .industry__text:nth-of-type(8) {
+        position: absolute;
+        right: 380px;
+        top: 909px;
+    }
+
+    .industry__inderline-text {
+        position: absolute;
+    }
+    .industry__inderline-text:nth-of-type(1) {
+        top: 165px;
+        left: 537px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(2) {
+        top: 390px;
+        left: 535px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(3) {
+        top: 613px;
+        left: 535px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(4) {
+        top: 836px;
+        left: 535px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(5) {
+        top: 278px;
+        right: 540px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(6) {
+        top: 501px;
+        right: 540px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(7) {
+        top: 724px;
+        right: 540px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(8) {
+        top: 947px;
+        right: 540px;
+        transform: scaleX(0.5)
+    }
 }
 
 
