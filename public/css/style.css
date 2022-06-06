@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../src/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../src/fonts/Montserrat-Bold.ttf);
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -8,7 +16,8 @@
 body {
   background-color: #000a19;
   overflow: hidden;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 [tag=industry] {
@@ -1261,13 +1270,13 @@ body {
 }
 .industry__one-slide .industry__one-slide__title {
   font-size: calc(42px);
-  color: #fff;
+  color: #ffc000;
   position: relative;
   top: -300px;
 }
 .industry__one-slide .industry__one-slide__subtitle {
   font-size: calc(38px);
-  color: #fff;
+  color: #ffc000;
   border-left: 4px solid #fff;
   padding-left: 10px;
   position: relative;
@@ -1357,11 +1366,11 @@ body {
 }
 .industry__two-slide .industry__two-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 .industry__two-slide .industry__two-slide__subtitle {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   border-left: 4px solid #fff;
   padding-left: 10px;
 }
@@ -1446,11 +1455,11 @@ body {
 }
 .industry__three-slide .industry__three-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 .industry__three-slide .industry__three-slide__subtitle {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   border-left: 4px solid #fff;
   padding-left: 10px;
 }
@@ -1566,11 +1575,11 @@ body {
 }
 .industry__four-slide .industry__four-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 .industry__four-slide .industry__four-slide__subtitle {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   border-left: 4px solid #fff;
   padding-left: 10px;
 }
@@ -1681,11 +1690,11 @@ body {
 }
 .industry__five-slide .industry__five-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 .industry__five-slide .industry__five-slide__subtitle {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   border-left: 4px solid #fff;
   padding-left: 10px;
 }
@@ -1789,11 +1798,11 @@ body {
 }
 .industry__six-slide .industry__six-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 .industry__six-slide .industry__six-slide__subtitle {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   border-left: 4px solid #fff;
   padding-left: 10px;
 }
@@ -1883,11 +1892,11 @@ body {
 }
 .industry__seven-slide .industry__seven-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 .industry__seven-slide .industry__seven-slide__subtitle {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   border-left: 4px solid #fff;
   padding-left: 10px;
 }
@@ -1990,11 +1999,11 @@ body {
 }
 .industry__eight-slide .industry__eight-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 .industry__eight-slide .industry__eight-slide__subtitle {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   border-left: 4px solid #fff;
   padding-left: 10px;
 }
