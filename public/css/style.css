@@ -2308,6 +2308,117 @@ body {
   color: #fff;
 }
 
+.cultureTour__start-slide {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 40px;
+}
+.cultureTour__start-slide .cultureTour__block {
+  position: relative;
+  z-index: 2;
+}
+.cultureTour__start-slide .cultureTour__start-slide__hexagon-outer {
+  width: 360px;
+  height: 288px;
+  position: absolute;
+}
+.cultureTour__start-slide .cultureTour__start-slide__hexagon-outer:nth-of-type(1) {
+  position: absolute;
+  top: 62px;
+  left: 750px;
+}
+.cultureTour__start-slide .cultureTour__start-slide__hexagon-outer:nth-of-type(2) {
+  position: absolute;
+  top: 218px;
+  left: 1040px;
+}
+.cultureTour__start-slide .cultureTour__start-slide__hexagon-outer:nth-of-type(3) {
+  position: absolute;
+  top: 520px;
+  left: 1037px;
+}
+.cultureTour__start-slide .cultureTour__start-slide__hexagon-outer:nth-of-type(4) {
+  position: absolute;
+  top: 366px;
+  left: 750px;
+}
+.cultureTour__start-slide .cultureTour__start-slide__hexagon-outer:nth-of-type(5) {
+  position: absolute;
+  top: 667px;
+  left: 745px;
+}
+.cultureTour__start-slide .cultureTour__start-slide__hexagon-outer:nth-of-type(6) {
+  position: absolute;
+  top: 510px;
+  left: 457px;
+}
+.cultureTour__start-slide .cultureTour__start-slide__hexagon-outer:nth-of-type(7) {
+  position: absolute;
+  top: 210px;
+  left: 458px;
+}
+.cultureTour__start-slide .cultureTour__start-slide__img {
+  width: 100%;
+  height: 100%;
+}
+.cultureTour__start-slide .cultureTour__start-slide__hexagon-inner--text {
+  background-color: #000a19;
+}
+.cultureTour__start-slide .cultureTour__start-slide__text-hex {
+  font-size: 38px;
+  color: #fff;
+  position: absolute;
+  top: 100px;
+  left: 74px;
+  text-align: center;
+}
+
+.cultureTour__start-slide__title {
+  font-size: 42px;
+  color: #fff;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+}
+
+.cultureTour__start-slide__text {
+  color: #fff;
+  font-size: 28px;
+  position: absolute;
+}
+
+.cultureTour__start-slide__text:nth-of-type(1) {
+  top: 35px;
+  left: 750px;
+}
+
+.cultureTour__start-slide__text:nth-of-type(2) {
+  top: 350px;
+  left: 1445px;
+}
+
+.cultureTour__start-slide__text:nth-of-type(3) {
+  top: 670px;
+  left: 1445px;
+}
+
+.cultureTour__start-slide__text:nth-of-type(4) {
+  top: 1016px;
+  left: 778px;
+}
+
+.cultureTour__start-slide__text:nth-of-type(5) {
+  top: 644px;
+  left: 254px;
+}
+
+.cultureTour__start-slide__text:nth-of-type(6) {
+  top: 376px;
+  left: 200px;
+}
+
 .cultureTour__one-slide {
   width: 0;
   height: 0;
