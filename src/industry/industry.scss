@@ -1,0 +1,950 @@
+.industry__start-slide {
+
+    $widthHex: 240px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+    .industry__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        text-align: center;
+    }
+    .industry__blocks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+    
+    .industry__hexagon-outer:nth-of-type(1){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .industry__hexagon-outer:nth-of-type(2){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + 15px);
+        position: relative;
+        top: calc(#{-$heightHex}*1.5 + 15px);
+    }
+    .industry__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex}*2 + #{$mgHex});
+    }
+    .industry__hexagon-outer:nth-of-type(4){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*2.5 + #{$mgHex});
+    }
+    .industry__hexagon-outer:nth-of-type(5){
+        position: relative;
+        top: calc(#{-$heightHex}*3 + #{$mgHex});
+    }
+    .industry__hexagon-outer:nth-of-type(6){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*3.5 + #{$mgHex});
+    }
+    .industry__hexagon-outer:nth-of-type(7){
+        position: relative;
+        top: calc(#{-$heightHex}*4 + #{$mgHex});
+    }
+    .industry__hexagon-outer:nth-of-type(8){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*4.5 + #{$mgHex});
+    }
+    
+    .industry__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+        margin-bottom: $mgHex;
+    }
+    .industry__img {
+        width: 100%;
+        height: 100%;
+    }
+    .industry__text {
+        font-size: $sizeSlidesSubtitle;
+        color: $textColor;
+    }
+    .industry__text:nth-of-type(1) {
+        position: absolute;
+        left: 240px;
+        top: 116px;
+    }
+    .industry__text:nth-of-type(2) {
+        position: absolute;
+        right: 280px;
+        top: 240px;
+    }
+    .industry__text:nth-of-type(3) {
+        position: absolute;
+        left: 240px;
+        top: 350px;
+    }
+    .industry__text:nth-of-type(4) {
+        position: absolute;
+        right: 310px;
+        top: 463px;
+    }
+    .industry__text:nth-of-type(5) {
+        position: absolute;
+        left: 240px;
+        top: 573px;
+    }
+    .industry__text:nth-of-type(6) {
+        position: absolute;
+        right: 320px;
+        top: 686px;
+    }
+    .industry__text:nth-of-type(7) {
+        position: absolute;
+        left: 240px;
+        top: 796px;
+    }
+    .industry__text:nth-of-type(8) {
+        position: absolute;
+        right: 320px;
+        top: 909px;
+    }
+
+    .industry__inderline-text {
+        position: absolute;
+    }
+    .industry__inderline-text:nth-of-type(1) {
+        top: 165px;
+        left: 537px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(2) {
+        top: 390px;
+        left: 535px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(3) {
+        top: 613px;
+        left: 535px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(4) {
+        top: 836px;
+        left: 535px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(5) {
+        top: 278px;
+        right: 540px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(6) {
+        top: 501px;
+        right: 540px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(7) {
+        top: 724px;
+        right: 540px;
+        transform: scaleX(0.5)
+    }
+    .industry__inderline-text:nth-of-type(8) {
+        top: 947px;
+        right: 540px;
+        transform: scaleX(0.5)
+    }
+}
+
+
+// Промышленность - 1 слайд
+
+.industry__one-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+
+    .industry__one-slide__title {
+        font-size: calc(#{$sizeSlidesTitle});
+        color: $colorSlidesTitle;
+        position: relative;
+        top: -300px;
+    }
+    .industry__one-slide__subtitle {
+        font-size: calc(#{$sizeSlidesSubtitle});
+        color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+        position: relative;
+        top: -274px;
+    }
+    
+    .industry__one-slide__text {
+        font-size: $textSize;
+        color: #fff;
+        position: relative;
+        left: 87px;
+        top: -236px;
+        min-width: 500px;
+    }
+    .industry__one-slide__hexagons {
+        margin-top: 250px;
+    }
+    .industry__one-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .industry__one-slide__hexagon-outer:nth-of-type(2n){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .industry__one-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    
+    .industry__one-slide__hex-text {
+        color: #fff;
+        position: relative;
+        top: 88px;
+        font-size: calc(#{$sizeSlidesSubtitle} - 4px);
+        text-align: center;
+    }
+    .industry__one-slide__image {
+        width: 100%;
+        height: 100%;
+    
+    } 
+    .industry__one-slide__image--one {
+        width: 64%;
+        position: absolute;
+        left: 63px;
+    }
+    .industry__inderline-text {
+        position: relative;
+        top: -314px;
+        left: -1110px;
+        transform: scale(1.5);
+    }
+    .industry__one-slide__info {
+        position: relative;
+        top: 110px;
+        left: -1734px;
+        font-size: calc(#{$sizeSlidesSubtitle});
+        color: $colorSlidesSubtitle;
+    }
+}
+.industry__hexagon-inner-text {
+    background-color: $bg;
+}
+
+// Промышленность - 2 слайд
+
+.industry__two-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 40px;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 25px;
+
+   
+    .industry__two-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .industry__two-slide__subtitle {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+    }
+    .industry__two-slide__left-side {
+        min-width: 33%;
+        align-self: baseline;
+        margin-top: 142px;
+    }
+    .industry__two-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .industry__two-slide__hexagons {
+        margin-top: 500px;
+    }
+    .industry__two-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .industry__two-slide__hexagon-outer:nth-of-type(2){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .industry__two-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+        
+    }
+    .industry__two-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+    }
+    .industry__two-slide__image {
+        width: 100%;
+        height: 100%;
+    }
+    .industry__two-slide__info{
+        position: relative;
+        top: 20px;
+        left: -1407px;
+        color: #fff;
+        font-size: $sizeSlidesSubtitle;
+    }
+    .industry__two-slide__hex-text {
+        color: $textColor;
+        position: relative;
+        top: 119px;
+        font-size: $textSize;
+        text-align: center;
+    }
+}
+
+
+//Промышленность - 3 слайд
+
+.industry__three-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+
+    .industry__three-slide__left-side {
+        min-width: 500px;
+        align-self: flex-start;
+        margin-top: 50px;
+    }
+    .industry__three-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .industry__three-slide__subtitle {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+    }
+    .industry__three-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .industry__three-slide__text:nth-of-type(1){
+        min-width: 250px;
+        position: relative;
+        top: -257px;
+        left: 273px;
+    }
+    .industry__three-slide__text:nth-of-type(2) {
+        
+        position: relative;
+        top: 420px;
+        left: -1205px;
+        min-width: 450px;
+    }
+    .industry__three-slide__text:nth-of-type(3) {
+        
+        position: relative;
+        top: 330px;
+        left: -380px;
+    }
+    .industry__three-slide__hexagons {
+        margin-top: 300px;
+        position: relative;
+        top: 78px;
+        left: 215px;
+    }
+    .industry__three-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .industry__three-slide__hexagon-outer:nth-of-type(2n){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .industry__three-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .industry__three-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+    }
+    .industry__three-slide__image {
+        width: 100%;
+        height: 100%;
+    }
+    .industry__three-slide__info {
+        position: relative;
+        top: 20px;
+        left: -2166px;
+        color: $colorSlidesSubtitle;
+        font-size: $sizeSlidesSubtitle;
+        min-width: 550px;
+    }
+    .industry__inderline-text {
+        
+    }
+    .industry__inderline-text--one {
+        top: -329px;
+        left: -1352px;
+        transform: scale(0.7);
+        position: relative;
+    }
+    .industry__inderline-text--two {
+        top: 228px;
+        left: -1507px;
+        transform: scale(0.7);
+        position: relative;
+    }
+    .industry__inderline-text--three {
+        top: 270px;
+        left: -2636px;
+        transform: rotate(180deg) scale(0.7);
+        position: relative;
+    }
+    
+}
+
+
+
+// Промышленность - 4 слайд
+
+.industry__four-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+    .industry__four-slide__left-side {
+        min-width: 600px;
+        align-self: flex-start;
+        margin-top: 50px;
+    }
+    .industry__four-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .industry__four-slide__subtitle {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+    }
+    .industry__four-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+        position: relative;
+    }
+    .industry__four-slide__text--one {
+        top: -253px;
+        left: 15px;
+        width: 300px;
+    }
+    .industry__four-slide__text--two {
+        top: -39px;
+        left: -1444px;
+        width: 320px;
+    }
+    .industry__four-slide__text--three {
+        top: 362px;
+        left: -1925px;
+        min-width: 730px;
+    }
+    .industry__four-slide__hexagons {
+        margin-top: 400px;
+        margin-left: 150px;
+    }
+    .industry__four-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .industry__four-slide__hexagon-outer:nth-of-type(2n){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .industry__four-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .industry__four-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+    }
+    .industry__four-slide__info {
+        position: absolute;
+        top: 300px;
+        left: 40px;
+        width: 301px;
+        color: $colorSlidesSubtitle;
+        font-size: $sizeSlidesSubtitle;
+        
+    }
+
+    .industry__four-slide__image {
+        width: 100%;
+        height: 100%;
+    }
+    .industry__four-slide__inner-text {
+        background-color: $bg;
+    }
+    .industry__four-slide__hex-text {
+        color: $textColor;
+        position: relative;
+        top: 119px;
+        font-size: $textSize;
+        text-align: center;
+    }
+    .industry__inderline-text--one {
+        top: -305px;
+        left: -2358px;
+        transform: scale(0.7);
+        position: relative;
+
+    }
+    .industry__inderline-text--two {
+        top: -348px;
+        left: -1771px;
+        transform: scale(0.6);
+        position: relative;
+        
+    }
+    .industry__inderline-text--three {
+        bottom: 243px;
+        left: 681px;
+        transform: rotate(180deg) scale(0.7);
+        position: absolute;
+    }
+}
+
+
+//Промышленность - 5 слайд
+
+
+.industry__five-slide {
+    @include startStyleAnima;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+
+    .industry__five-slide__left-side {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .industry__five-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .industry__five-slide__subtitle {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+    }
+    .industry__five-slide__hexagons {
+        margin-left: 330px;
+        margin-top: 100px;
+    }
+    .industry__five-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .industry__five-slide__hexagon-outer:nth-of-type(2n){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .industry__five-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .industry__five-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+    }
+    
+    
+    .industry__five-slide__image {
+        width: 100%;
+        height: 100%;
+    }
+    .industry__five-slide__inner-text {
+        background-color: $bg;
+        
+    }
+    .industry__five-slide__hex-text {
+        color: $textColor;
+        position: relative;
+        top: 119px;
+        font-size: $textSize;
+        text-align: center;
+    }
+    .industry__five-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+        position: absolute;
+    }
+    .industry__five-slide__text--one {
+        width: 500px;
+        left: 200px;
+        top: 400px;
+    }
+    .industry__five-slide__text--two {
+        right: 50px;
+        top: 233px;
+        width: 250px;
+    }
+    .industry__five-slide__text--three {
+        width: 280px;
+        bottom: 40px;
+        left: 330px;
+    }
+    .industry__inderline-text--one {
+        top: 263px;
+        left: 484px;
+        transform: scale(0.7);
+        position: absolute;
+
+    }
+    .industry__inderline-text--two {
+        right: 312px;
+        top: 216px;
+        transform: scale(.6);
+        position: absolute;
+        
+    }
+    .industry__inderline-text--three {
+        bottom: 161px;
+        left: 596px;
+        transform: rotate(180deg) scale(0.7);
+        position: absolute;
+    }
+}
+
+//Промышленность - 6 слайд
+
+.industry__six-slide {
+    @include startStyleAnima;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+
+    .industry__six-slide__left-side {
+        margin-top: 50px;
+        margin-left: 20px;
+        width: 600px;
+    }
+    .industry__six-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .industry__six-slide__subtitle {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+    }
+    .industry__six-slide__hexagons {
+        // margin-left: 350px;
+        margin-top: 100px;
+    }
+    .industry__six-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .industry__six-slide__hexagon-outer:nth-of-type(2n){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .industry__six-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .industry__six-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+    }
+     
+    .industry__six-slide__image {
+        width: 100%;
+        height: 100%;
+    }
+    .industry__six-slide__inner-text {
+        background-color: $bg;
+        
+    }
+    .industry__six-slide__hex-text {
+        color: $textColor;
+        position: relative;
+        top: 119px;
+        font-size: $textSize;
+        text-align: center;
+    }
+    .industry__six-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+        position: absolute;
+    }
+    .industry__six-slide__text--one {
+        width: 500px;
+        left: 200px;
+        top: 400px;
+    }
+    .industry__six-slide__text--two {
+        right: 180px;
+        top: 233px;
+        width: 250px;
+    }
+    .industry__inderline-text--one {
+        top: 263px;
+        left: 404px;
+        transform: scale(0.7);
+        position: absolute;
+
+    }
+    .industry__inderline-text--two {
+        right: 400px;
+        top: 216px;
+        transform: scale(.6);
+        position: absolute;
+        
+    }
+}
+
+
+//Промышленность - 7 слайд
+
+.industry__seven-slide {
+    @include startStyleAnima;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+
+    .industry__seven-slide__left-side {
+        margin-top: 50px;
+        margin-left: 20px;
+        width: 600px;
+    }
+    .industry__seven-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .industry__seven-slide__subtitle {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+    }
+    .industry__seven-slide__hexagons {
+        // margin-left: 350px;
+        margin-top: 100px;
+    }
+    .industry__seven-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .industry__seven-slide__hexagon-outer:nth-of-type(2n){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .industry__seven-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .industry__seven-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+    }
+     
+    .industry__seven-slide__image {
+        width: 100%;
+        height: 100%;
+    }
+    .industry__seven-slide__inner-text {
+        background-color: $bg;
+        
+    }
+    .industry__seven-slide__hex-text {
+        color: $textColor;
+        position: relative;
+        top: 119px;
+        font-size: $textSize;
+        text-align: center;
+    }
+    .industry__seven-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+        position: absolute;
+    }
+    .industry__seven-slide__text--one {
+        width: 500px;
+        left: 200px;
+        top: 400px;
+    }
+    .industry__seven-slide__text--two {
+        right: 180px;
+        top: 233px;
+        width: 250px;
+    }
+    .industry__seven-slide__text--three {
+        left: 296px;
+        bottom: 33px;
+        width: 350px;
+    }
+
+    .industry__inderline-text--one {
+        top: 263px;
+        left: 404px;
+        transform: scale(0.7);
+        position: absolute;
+
+    }
+    .industry__inderline-text--two {
+        right: 400px;
+        top: 216px;
+        transform: scale(.6);
+        position: absolute;
+        
+    }
+    .industry__inderline-text--three {
+        bottom: 161px;
+        left: 511px;
+        transform: rotate(180deg) scale(0.7);
+        position: absolute;
+        
+    }
+}
+
+//Промышленность - 8 слайд
+
+.industry__eight-slide {
+    @include startStyleAnima;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+
+    .industry__eight-slide__left-side {
+        margin-top: 50px;
+        margin-left: 20px;
+        width: 600px;
+    }
+    .industry__eight-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .industry__eight-slide__subtitle {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        border-left: 4px solid #fff;
+        padding-left: 10px;
+    }
+    .industry__eight-slide__hexagons {
+        // margin-left: 350px;
+        margin-top: 100px;
+    }
+    .industry__eight-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .industry__eight-slide__hexagon-outer:nth-of-type(2n){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .industry__eight-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .industry__eight-slide__hexagon-outer:nth-of-type(4){
+        position: relative;
+        top: calc(#{-$heightHex}*1.45 + #{$mgHex});
+    }
+     
+    .industry__eight-slide__image {
+        width: 100%;
+        height: 100%;
+    }
+    .industry__eight-slide__inner-text {
+        background-color: $bg;
+        
+    }
+    .industry__eight-slide__hex-text {
+        color: $textColor;
+        position: relative;
+        top: 119px;
+        font-size: $textSize;
+        text-align: center;
+    }
+    .industry__eight-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+        position: absolute;
+    }
+    .industry__eight-slide__text--one {
+        width: 500px;
+        left: 200px;
+        top: 400px;
+    }
+    .industry__eight-slide__text--two {
+        right: 180px;
+        top: 233px;
+        width: 250px;
+    }
+    .industry__eight-slide__text--three {
+        left: 296px;
+        bottom: 33px;
+        width: 350px;
+    }
+
+    .industry__inderline-text--one {
+        top: 263px;
+        left: 404px;
+        transform: scale(0.7);
+        position: absolute;
+
+    }
+    .industry__inderline-text--two {
+        right: 400px;
+        top: 216px;
+        transform: scale(.6);
+        position: absolute;
+        
+    }
+    .industry__inderline-text--three {
+        bottom: 161px;
+        left: 511px;
+        transform: rotate(180deg) scale(0.7);
+        position: absolute;
+        
+    }
+}

@@ -1,0 +1,58 @@
+.hexagon-outer {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: #fff;
+}
+.hexagon-inner {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transform: scale(0.95);
+    width: inherit;
+    height: inherit;
+}
+.startSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: #{$maxWidthSlide};
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+.startSlide__title {
+    font-size: $sizeSlidesTitle;
+    color: $colorSlidesTitle;
+    text-align: center;
+}
+.startSlide__blocks {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 140px;
+}
+.startSlide__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: $mgLeftHexagon;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.startSlide__block:nth-of-type(2n){
+    flex-direction: column-reverse;
+    margin-top: calc(#{$heightHexStartSlide} / 2 - 136px);
+    
+}
+.startSlide__hexagon-outer {
+    width: $widthHexStartSlide;
+    height: #{$heightHexStartSlide};
+}
+
+.startSlide__img {
+    width: 100%;
+    height: 100%;
+}
+.startSlide__text {
+    color: $textColor;
+    font-size: $textSize;
+    // width: $mgLeftHexagon;
+
+}
