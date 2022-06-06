@@ -3086,9 +3086,9 @@ body {
 .scienceCity__two-slide .scienceCity__two-slide__title {
   font-size: 42px;
   color: #fff;
-}
-.scienceCity__two-slide .scienceCity__two-slide__text-space-eat {
-  font-size: 28px;
+  position: absolute;
+  top: 80px;
+  left: 10px;
 }
 .scienceCity__two-slide .scienceCity__two-slide__right-side {
   display: -webkit-box;
@@ -3098,23 +3098,77 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 300px;
 }
 .scienceCity__two-slide .scienceCity__two-slide__hexagon-outer {
   width: 450px;
   height: 360px;
 }
-.scienceCity__two-slide .scienceCity__two-slide__hexagon-outer:nth-of-type(2n) {
-  margin-left: calc(450px - 450px/4 + 15px);
-  position: relative;
-  top: calc(-360px/2 + 15px);
-}
 .scienceCity__two-slide .scienceCity__two-slide__hexagon-outer:nth-last-of-type(1) {
   position: relative;
   top: calc(-360px + 15px);
 }
+.scienceCity__two-slide .scienceCity__two-slide__hexagon-outer:nth-of-type(2) {
+  margin-left: calc(450px - 450px/4 + 15px);
+  position: relative;
+  top: calc(-360px/2 + 15px);
+}
+.scienceCity__two-slide .scienceCity__two-slide__hexagon-outer:nth-of-type(3) {
+  position: relative;
+  top: calc(-360px + 15px);
+}
+.scienceCity__two-slide .scienceCity__two-slide__hexagon-outer:nth-of-type(4) {
+  margin-left: calc(450px - 450px/4 + 15px);
+  position: relative;
+  top: calc(-360px*1.5 + 2*15px);
+}
+.scienceCity__two-slide .scienceCity__two-slide__hexagon-inner--text {
+  background-color: #000a19;
+}
+.scienceCity__two-slide .scienceCity__two-slide__hex-text {
+  font-size: 28px;
+  color: #fff;
+  position: absolute;
+  top: 120px;
+  left: 100px;
+}
 .scienceCity__two-slide .scienceCity__two-slide__image-space-eat {
   width: 100%;
   height: 100%;
+}
+.scienceCity__two-slide .scienceCity__two-slide__text {
+  position: absolute;
+  width: 300px;
+  font-size: 28px;
+  color: #fff;
+}
+.scienceCity__two-slide .scienceCity__two-slide__text:nth-of-type(1) {
+  top: 318px;
+  left: 256px;
+}
+.scienceCity__two-slide .scienceCity__two-slide__text:nth-of-type(2) {
+  top: 114px;
+  right: 0;
+}
+.scienceCity__two-slide .scienceCity__two-slide__text:nth-of-type(3) {
+  bottom: 30px;
+  left: 200px;
+  width: 700px;
+}
+.scienceCity__two-slide .cultureTour__underline-text {
+  position: absolute;
+}
+.scienceCity__two-slide .cultureTour__underline-text--one {
+  left: 451px;
+  top: 178px;
+}
+.scienceCity__two-slide .cultureTour__underline-text--two {
+  right: 261px;
+  top: 100px;
+}
+.scienceCity__two-slide .cultureTour__underline-text--three {
+  left: 558px;
+  bottom: 244px;
 }
 
 .scienceCity__three-slide {
