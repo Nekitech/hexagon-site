@@ -212,8 +212,9 @@
         height: 700px;
         flex-direction: column;
         justify-content: space-around;
-        position: relative;
-        top: 210px;
+        position: absolute;
+        bottom: -30px;
+        right: 0;
 
         .agro__one-slide__item-comp {
             width: 100%;

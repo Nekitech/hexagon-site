@@ -20,13 +20,13 @@ body {
   left: 316px;
 }
 
-[tag=export] {
+[tag=it] {
   top: 425px;
-  left: 750px;
+  left: 730px;
 }
 
-[tag=export] .bar {
-  width: 80px;
+[tag=it] .bar {
+  width: 70px;
 }
 
 [tag=science-potential] {
@@ -594,8 +594,9 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  position: relative;
-  top: 210px;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
 }
 .agro__one-slide .agro__one-slide__companies .agro__one-slide__item-comp {
   width: 100%;
