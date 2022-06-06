@@ -594,8 +594,8 @@ body {
   left: 89px;
 }
 .agro__one-slide .agro__one-slide__text-hex--two {
-  top: 160px;
-  left: 50px;
+  top: 180px;
+  left: 78px;
   text-align: center;
   font-size: 28px;
 }
@@ -604,7 +604,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   min-width: 700px;
-  height: 700px;
+  height: 630px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -612,7 +612,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
-  bottom: -110px;
+  bottom: -4px;
   right: 0;
 }
 .agro__one-slide .agro__one-slide__companies .agro__one-slide__title-comp {
@@ -671,11 +671,11 @@ body {
 }
 .agro__one-slide .agro__one-slide__companies .agro__underline-text {
   position: absolute;
-  -webkit-transform: scaleX(1.2) scaleY(0.8);
-      -ms-transform: scaleX(1.2) scaleY(0.8);
-          transform: scaleX(1.2) scaleY(0.8);
-  left: 112px;
-  top: -5px;
+  -webkit-transform: scaleX(0.8) scaleY(0.5);
+      -ms-transform: scaleX(0.8) scaleY(0.5);
+          transform: scaleX(0.8) scaleY(0.5);
+  left: 32px;
+  top: -16px;
 }
 .agro__one-slide .agro__one-slide__companies .agro__one-slide__text-comp {
   font-size: calc(28px - 4px);
@@ -729,8 +729,8 @@ body {
   left: 89px;
 }
 .agro__two-slide .agro__two-slide__text-hex--two {
-  top: 160px;
-  left: 50px;
+  top: 184px;
+  left: 90px;
   text-align: center;
   font-size: 28px;
 }
@@ -798,11 +798,11 @@ body {
 }
 .agro__two-slide .agro__two-slide__companies .agro__underline-text {
   position: absolute;
-  -webkit-transform: scaleX(1.2) scaleY(0.8);
-      -ms-transform: scaleX(1.2) scaleY(0.8);
-          transform: scaleX(1.2) scaleY(0.8);
-  left: 112px;
-  top: -5px;
+  -webkit-transform: scaleX(0.8) scaleY(0.5);
+      -ms-transform: scaleX(0.8) scaleY(0.5);
+          transform: scaleX(0.8) scaleY(0.5);
+  left: 80px;
+  top: -16px;
 }
 .agro__two-slide .agro__two-slide__companies .agro__two-slide__text-comp {
   font-size: 28px;
@@ -2408,7 +2408,7 @@ body {
 
 .cultureTour__start-slide__text:nth-of-type(6) {
   top: 376px;
-  left: 200px;
+  left: 230px;
 }
 
 .cultureTour__one-slide {
