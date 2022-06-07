@@ -365,6 +365,7 @@ body {
 .startSlide__img {
   width: 100%;
   height: 100%;
+  position: absolute;
 }
 
 .startSlide__text {
@@ -2099,6 +2100,34 @@ body {
           flex-direction: column;
 }
 
+.sciencePotential__start-slide__img-one {
+  width: 73%;
+  height: 64%;
+  top: 53px;
+  left: 64px;
+}
+
+.sciencePotential__start-slide__img-two {
+  width: 82%;
+  height: 47%;
+  top: 94px;
+  left: 51px;
+}
+
+.sciencePotential__start-slide__img-three {
+  width: 64%;
+  height: 77%;
+  top: 30px;
+  left: 70px;
+}
+
+.sciencePotential__start-slide__img-four {
+  width: 76%;
+  height: 82%;
+  top: 19px;
+  left: 52px;
+}
+
 .sciencePotential__start-slide__title {
   font-size: 42px;
   color: #fff;
@@ -3063,6 +3092,14 @@ body {
 .scienceCity__one-slide .scienceCity__one-slide__text-img {
   width: 100%;
   height: 150%;
+}
+.scienceCity__one-slide .scienceCity__one-slide__text-img-two {
+  width: 124%;
+  height: 112%;
+}
+.scienceCity__one-slide .scienceCity__one-slide__text-img-three {
+  width: 129%;
+  height: 118%;
 }
 .scienceCity__one-slide .scienceCity__one-slide__info-text {
   color: #fff;
