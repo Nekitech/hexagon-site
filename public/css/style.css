@@ -203,12 +203,12 @@ body {
 
 .hex-item::before {
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 0;
+  height: 0;
   border-radius: 50%;
   position: absolute;
-  left: -42px;
-  top: 52px;
+  left: 17px;
+  top: 60px;
   -webkit-box-shadow: 0 0 40px 20px rgb(59, 118, 189);
           box-shadow: 0 0 40px 20px rgb(59, 118, 189);
   z-index: 4;
