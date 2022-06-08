@@ -1,7 +1,7 @@
 let hexPages = document.querySelectorAll('#hexPage')
 const colors = {
     'industry': '#2c92f2',
-    'export': '#7fb7eb',
+    'it': '#7fb7eb',
     'culture-tour': '#7febc2',
     'science-city': '#00C9EF',
     'agro': '#5BCBA4',
