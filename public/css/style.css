@@ -320,7 +320,7 @@ body {
 
 .startSlide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   text-align: center;
 }
 
@@ -458,7 +458,7 @@ body {
 }
 .agro__start-slide .agro__title-descr {
   font-size: calc(42px - 15px);
-  color: #fff;
+  color: #ffc000;
 }
 .agro__start-slide .agro__descr-text {
   font-size: calc(28px - 5px);
@@ -1084,7 +1084,7 @@ body {
 
 .industry__start-slide .industry__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   text-align: center;
 }
 .industry__start-slide .industry__blocks {
@@ -2113,6 +2113,10 @@ body {
   left: 64px;
 }
 
+.scienceCity__hexagon-inner--text {
+  background-color: #000a19;
+}
+
 .sciencePotential__start-slide__img-two {
   width: 82%;
   height: 47%;
@@ -2136,7 +2140,7 @@ body {
 
 .sciencePotential__start-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 
 .sciencePotential__start-slide__blocks {
@@ -2170,9 +2174,10 @@ body {
   height: 120px;
 }
 
-.sciencePotential__start-slide__text {
-  font-size: calc(28px - 10px);
+.sciencePotenial__start-slide__text {
+  font-size: 28px;
   color: #fff;
+  position: absolute;
 }
 
 .sciencePotenial__start-slide__text:nth-of-type(1) {
@@ -2220,7 +2225,7 @@ body {
 }
 .sciencePotential__one-slide .sciencePotential__one-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
   top: 40px;
   left: 750px;
@@ -2290,7 +2295,7 @@ body {
 }
 .sciencePotential__two-slide .sciencePotential__two-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
   top: 80px;
   left: 630px;
@@ -2358,7 +2363,7 @@ body {
 }
 .sciencePotential__three-slide .sciencePotential__three-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
   top: 80px;
   left: 630px;
@@ -2424,7 +2429,7 @@ body {
 }
 .sciencePotential__four-slide .sciencePotential__four-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
   top: 80px;
   left: 350px;
@@ -2605,7 +2610,7 @@ body {
 }
 .cultureTour__one-slide .culturetour__one-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 .cultureTour__one-slide .culturetour__one-slide__item {
   color: #fff;
@@ -2726,7 +2731,7 @@ body {
 }
 .cultureTour__two-slide .cultureTour__two-slide__title {
   font-size: calc(42px - 10px);
-  color: #fff;
+  color: #ffc000;
 }
 .cultureTour__two-slide .cultureTour__two-slide__img-block {
   display: -webkit-box;
@@ -2785,7 +2790,7 @@ body {
 }
 .cultureTour__three-slide .culturetour__three-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   width: 480px;
 }
 .cultureTour__three-slide .culturetour__three-slide__text {
@@ -2837,10 +2842,11 @@ body {
 }
 .cultureTour__three-slide .cultureTour__three-slide__hex-text {
   font-size: 28px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
   top: 118px;
   left: 54px;
+  text-align: center;
 }
 .cultureTour__three-slide .cultureTour__underline-text {
   position: absolute;
@@ -2886,7 +2892,7 @@ body {
 }
 .cultureTour__four-slide .culturetour__four-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 .cultureTour__four-slide .culturetour__four-slide__text {
   font-size: 28px;
@@ -2986,9 +2992,11 @@ body {
           justify-content: space-between;
   padding: 0 40px;
 }
-.cultureTour__five-slide .tour-fourSlide__title {
+.cultureTour__five-slide .tour-fiveSlide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
+  margin-bottom: 30px;
+  text-align: center;
 }
 .cultureTour__five-slide .cultureTour__five-slide__left-text {
   font-size: 28px;
@@ -3037,6 +3045,10 @@ body {
   font-size: 28px;
   color: #fff;
   text-align: center;
+  margin-top: 50px;
+}
+.cultureTour__five-slide .cultureTour__five-slide__item-text--yellow {
+  color: #ffc000;
 }
 .cultureTour__five-slide .cultureTour__five-slide__elem-text-image {
   display: -webkit-box;
@@ -3075,7 +3087,7 @@ body {
 }
 .cultureTour__six-slide .culturetour__six-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 .cultureTour__six-slide .culturetour__six-slide__right-side {
   margin-left: 355px;
@@ -3108,10 +3120,11 @@ body {
 }
 .cultureTour__six-slide .cultureTour__six-slide__hex-text {
   font-size: 28px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
   top: 126px;
   left: 54px;
+  text-align: center;
 }
 .cultureTour__six-slide .cultureTour__six-slide__info {
   font-size: 28px;
@@ -3154,14 +3167,89 @@ body {
   bottom: 303px;
 }
 
-.scienceCity__hexagon-inner--text {
+.scienceCity__start-slide .scienceCity__hexNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 700px;
+}
+.scienceCity__start-slide .scienceCity__start-slide__text {
+  font-size: 28px;
+  color: #ffc000;
+}
+.scienceCity__start-slide .scienceCity__start-slide__text--one {
+  position: absolute;
+  right: 86px;
+  top: 138px;
+}
+.scienceCity__start-slide .scienceCity__start-slide__text--two {
+  position: absolute;
+  left: 150px;
+  top: 118px;
+}
+.scienceCity__start-slide .scienceCity__start-slide__text--three {
+  position: absolute;
+  right: 100px;
+  bottom: 414px;
+}
+.scienceCity__start-slide .scienceCity__start-slide__text--four {
+  position: absolute;
+  left: 150px;
+  top: 784px;
+}
+.scienceCity__start-slide .scienceCity__block {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.scienceCity__start-slide .scienceCity__block:nth-of-type(1) {
+  margin-left: calc(400px - 400px/6 + 15px);
+  position: relative;
+  top: calc(-320px/2 + 15px + 38px);
+}
+.scienceCity__start-slide .scienceCity__block:nth-of-type(2) {
+  position: relative;
+  top: calc(-320px + 15px + 15px);
+}
+.scienceCity__start-slide .scienceCity__block:nth-of-type(3) {
+  margin-left: calc(400px - 400px/6 + 15px);
+  position: relative;
+  top: calc(-320px*1.5 + 15px);
+}
+.scienceCity__start-slide .scienceCity__block:nth-of-type(4) {
+  position: relative;
+  top: calc(-320px*2 + 15px - 21px);
+}
+.scienceCity__start-slide .scienceCity__hexagon-inner--text {
   background-color: #000a19;
 }
-
-.sciencePotenial__start-slide__text {
+.scienceCity__start-slide .sciencePotenial__start-slide__text {
   font-size: 28px;
   color: #fff;
   position: absolute;
+}
+.scienceCity__start-slide .scienceCity__name-inderline {
+  position: absolute;
+}
+.scienceCity__start-slide .scienceCity__name-inderline:nth-of-type(1) {
+  top: 167px;
+  right: 304px;
+}
+.scienceCity__start-slide .scienceCity__name-inderline:nth-of-type(2) {
+  top: 166px;
+  left: 360px;
+}
+.scienceCity__start-slide .scienceCity__name-inderline:nth-of-type(3) {
+  top: 631px;
+  right: 284px;
+}
+.scienceCity__start-slide .scienceCity__name-inderline:nth-of-type(4) {
+  top: 819px;
+  left: 288px;
 }
 
 .scienceCity__one-slide {
@@ -3190,7 +3278,7 @@ body {
 }
 .scienceCity__one-slide .scienceCity__one-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
   top: 80px;
   left: 10px;
@@ -3320,7 +3408,7 @@ body {
 }
 .scienceCity__two-slide .scienceCity__two-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
   top: 80px;
   left: 10px;
@@ -3362,10 +3450,11 @@ body {
 }
 .scienceCity__two-slide .scienceCity__two-slide__hex-text {
   font-size: 28px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
   top: 120px;
   left: 100px;
+  text-align: center;
 }
 .scienceCity__two-slide .scienceCity__two-slide__image-space-eat {
   width: 100%;
@@ -3432,7 +3521,7 @@ body {
 }
 .scienceCity__three-slide .scienceCity__three-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
 }
 .scienceCity__three-slide .scienceCity__three-slide__left-side {
   position: absolute;
@@ -3469,9 +3558,9 @@ body {
 }
 .scienceCity__three-slide .scienceCity__three-slide__hex-text {
   font-size: 28px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
-  top: 20px;
+  top: 60px;
   left: 0px;
   text-align: center;
 }
@@ -3533,7 +3622,7 @@ body {
 }
 .scienceCity__four-slide .scienceCity__four-slide__title {
   font-size: 42px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
   top: 80px;
   left: 10px;
@@ -3577,10 +3666,10 @@ body {
 }
 .scienceCity__four-slide .scienceCity__four-slide__hex-text {
   font-size: 28px;
-  color: #fff;
+  color: #ffc000;
   position: absolute;
-  top: 86px;
-  left: 92px;
+  top: 106px;
+  left: 46px;
   text-align: center;
 }
 .scienceCity__four-slide .scienceCity__four-slide__text {

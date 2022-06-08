@@ -40,7 +40,8 @@ hexPages.forEach((elem) => {
 let popupNav = [...document.querySelectorAll('.startSlide__block'),
                 ...document.querySelectorAll('.industry__block'),
                 ...document.querySelectorAll('.agro__block'),
-                ...document.querySelectorAll('.cultureTour__start-slide__hexagon-outer')]
+                ...document.querySelectorAll('.cultureTour__start-slide__hexagon-outer'),
+                ...document.querySelectorAll('.scienceCity__block')]
 popupNav.forEach((elem) => {
     elem.addEventListener('click', function (e) {
         let popup = document.querySelector(`[popup=${this.id}]`)
