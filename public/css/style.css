@@ -595,10 +595,9 @@ body {
   left: 89px;
 }
 .agro__one-slide .agro__one-slide__text-hex--two {
-  top: 180px;
-  left: 78px;
+  top: 95px;
+  left: 50px;
   text-align: center;
-  font-size: 28px;
 }
 .agro__one-slide .agro__one-slide__companies {
   display: -webkit-box;
@@ -730,10 +729,9 @@ body {
   left: 89px;
 }
 .agro__two-slide .agro__two-slide__text-hex--two {
-  top: 184px;
-  left: 90px;
+  top: 106px;
+  left: 50px;
   text-align: center;
-  font-size: 28px;
 }
 .agro__two-slide .agro__two-slide__companies {
   display: -webkit-box;
@@ -853,14 +851,15 @@ body {
   color: #ffc000;
 }
 .agro__three-slide .agro__three-slide__text-hex--one {
-  top: 75px;
-  left: 89px;
+  top: 105px;
+  left: 58px;
+  font-size: 36px;
 }
 .agro__three-slide .agro__three-slide__text-hex--two {
-  top: 160px;
-  left: 50px;
+  top: 60px;
+  left: 2px;
   text-align: center;
-  font-size: 28px;
+  font-size: 36px;
 }
 .agro__three-slide .agro__three-slide__companies {
   display: -webkit-box;
@@ -990,10 +989,10 @@ body {
   left: 89px;
 }
 .agro__four-slide .agro__four-slide__text-hex--two {
-  top: 160px;
-  left: 50px;
+  top: 72px;
+  left: 4px;
   text-align: center;
-  font-size: 28px;
+  font-size: 38px;
 }
 .agro__four-slide .agro__four-slide__companies {
   display: -webkit-box;
