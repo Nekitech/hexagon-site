@@ -214,46 +214,6 @@ body {
   z-index: 4;
 }
 
-[sector=industry]::before {
-  -webkit-box-shadow: 0 0 80px 40px #2c92f2;
-          box-shadow: 0 0 80px 40px #2c92f2;
-}
-
-[sector=culture-tour]::before {
-  -webkit-box-shadow: 0 0 80px 50px #7febc2;
-          box-shadow: 0 0 80px 50px #7febc2;
-  -webkit-animation: ripple-culture-tour 4s ease 2s infinite;
-          animation: ripple-culture-tour 4s ease 2s infinite;
-}
-
-[sector=science-potential]::before {
-  -webkit-box-shadow: 0 0 80px 50px #00CCCC;
-          box-shadow: 0 0 80px 50px #00CCCC;
-  -webkit-animation: ripple-science-potential 4s ease 2s infinite;
-          animation: ripple-science-potential 4s ease 2s infinite;
-}
-
-[sector=science-city]::before {
-  -webkit-box-shadow: 0 0 80px 50px #00C9EF;
-          box-shadow: 0 0 80px 50px #00C9EF;
-  -webkit-animation: ripple-science-city 4s ease 2s infinite;
-          animation: ripple-science-city 4s ease 2s infinite;
-}
-
-[sector=agro]::before {
-  -webkit-box-shadow: 0 0 80px 50px #5BCBA4;
-          box-shadow: 0 0 80px 50px #5BCBA4;
-  -webkit-animation: ripple-agro 4s ease 2s infinite;
-          animation: ripple-agro 4s ease 2s infinite;
-}
-
-[sector=it]::before {
-  -webkit-box-shadow: 0 0 80px 50px #7fb7eb;
-          box-shadow: 0 0 80px 50px #7fb7eb;
-  -webkit-animation: ripple-it 4s ease 2s infinite;
-          animation: ripple-it 4s ease 2s infinite;
-}
-
 .hex-item__icon {
   width: 100px;
   height: 100px;
