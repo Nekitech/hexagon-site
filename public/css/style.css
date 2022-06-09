@@ -1719,7 +1719,7 @@ body {
   min-width: 500px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-top: 50px;
+  margin-top: 114px;
 }
 .industry__three-slide .industry__three-slide__title {
   font-size: 42px;
@@ -1844,7 +1844,7 @@ body {
   min-width: 600px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 .industry__four-slide .industry__four-slide__title {
   font-size: 42px;
@@ -1960,7 +1960,7 @@ body {
   background-color: #fff;
 }
 .industry__five-slide .industry__five-slide__left-side {
-  margin-top: 50px;
+  margin-top: 120px;
   margin-left: 20px;
 }
 .industry__five-slide .industry__five-slide__title {
@@ -2069,7 +2069,7 @@ body {
   background-color: #fff;
 }
 .industry__six-slide .industry__six-slide__left-side {
-  margin-top: 50px;
+  margin-top: 108px;
   margin-left: 20px;
   width: 600px;
 }
@@ -2165,7 +2165,7 @@ body {
   background-color: #fff;
 }
 .industry__seven-slide .industry__seven-slide__left-side {
-  margin-top: 50px;
+  margin-top: 110px;
   margin-left: 20px;
   width: 600px;
 }
@@ -2274,7 +2274,7 @@ body {
   background-color: #fff;
 }
 .industry__eight-slide .industry__eight-slide__left-side {
-  margin-top: 50px;
+  margin-top: 120px;
   margin-left: 20px;
   width: 600px;
 }
