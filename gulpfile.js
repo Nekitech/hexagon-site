@@ -43,6 +43,12 @@ const js = () => {
         .pipe(dest('./public/js'))
 }
 
+// Шрифты
+const fonts = () => {
+    return src('./src/fonts/**/*.ttf')
+    .pipe(dest('./public/fonts'))
+}
+
 // img
 const img = () => {
     return src('./src/img/*.*')
@@ -59,6 +65,7 @@ const watcher = () => {
     watch('./src/**/*.scss', scss).on('all', browserSync.reload)
     watch('./src/**/*.js', js).on('all', browserSync.reload)
     watch('./src/img/*.*', img).on('all', browserSync.reload)
+    watch('./src/fonts/*.ttf', fonts).on('all', browserSync.reload)
 }
 
 // Удаление директории
@@ -82,10 +89,11 @@ exports.clear = clear
 exports.scss = scss
 exports.js = js
 exports.img = img
+exports.fonts = fonts
 
 // Сборка
 exports.dev = series(
     clear,
-    parallel(html, scss, js, img),
+    parallel(html, scss, js, img, fonts),
     parallel(watcher, server)
 )
