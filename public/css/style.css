@@ -400,6 +400,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  cursor: pointer;
 }
 .agro__start-slide .agro__hexagon-outer {
   width: 450px;
@@ -1114,6 +1115,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 200px;
+}
+.industry__start-slide .industry__block {
+  cursor: pointer;
 }
 .industry__start-slide .industry__hexagon-outer:nth-of-type(1) {
   position: relative;
@@ -2543,6 +2547,7 @@ body {
 .cultureTour__start-slide .cultureTour__block {
   position: relative;
   z-index: 2;
+  cursor: pointer;
 }
 .cultureTour__start-slide .cultureTour__start-slide__hexagon-outer {
   width: 360px;
@@ -3267,6 +3272,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  cursor: pointer;
 }
 .scienceCity__start-slide .scienceCity__block:nth-of-type(1) {
   margin-left: calc(400px - 400px/6 + 15px);
@@ -3789,6 +3795,7 @@ body {
 }
 .it__start-slide .it__block {
   z-index: 2;
+  cursor: pointer;
 }
 .it__start-slide .it__start-slide__hexagon-outer {
   width: 400px;
