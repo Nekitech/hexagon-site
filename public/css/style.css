@@ -104,6 +104,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   background-color: transparent;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
