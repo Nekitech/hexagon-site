@@ -540,8 +540,8 @@ body {
   right: 73px;
 }
 .agro__start-slide .agro__descr-item:nth-of-type(5) {
-  top: 770px;
-  left: 122px;
+  top: 794px;
+  left: 74px;
 }
 .agro__start-slide .agro__title-descr {
   font-size: calc(42px - 15px);
@@ -1085,7 +1085,7 @@ body {
 }
 .agro__four-slide .agro__four-slide__text-hex--one {
   top: 75px;
-  left: 89px;
+  left: 10px;
 }
 .agro__four-slide .agro__four-slide__text-hex--two {
   top: 72px;
@@ -1103,20 +1103,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  bottom: -110px;
+  bottom: -170px;
   right: 0;
 }
 .agro__four-slide .agro__four-slide__companies .agro__four-slide__title-comp {
   font-size: 28px;
   color: #fff;
   position: absolute;
-  top: -50px;
-}
-.agro__four-slide .agro__four-slide__companies .agro__four-slide__title-comp {
-  font-size: 28px;
-  color: #fff;
-  position: absolute;
-  top: -50px;
+  top: -108px;
 }
 .agro__four-slide .agro__four-slide__companies .agro__four-slide__item-comp {
   width: 100%;
@@ -2370,9 +2364,9 @@ body {
   font-size: 42px;
   color: #ffc000;
   position: absolute;
-  top: 40px;
-  left: 750px;
-  width: 700px;
+  top: 75px;
+  left: 344px;
+  width: 1300px;
 }
 .sciencePotential__one-slide .sciencePotential__one-slide__left-side {
   margin-bottom: 140px;
@@ -2508,7 +2502,7 @@ body {
   padding: 0 40px;
 }
 .sciencePotential__three-slide .sciencePotential__three-slide__title {
-  font-size: 42px;
+  font-size: calc(42px + 18px);
   color: #ffc000;
   position: absolute;
   top: 80px;
@@ -2612,7 +2606,7 @@ body {
   position: absolute;
   left: 60px;
   bottom: 80px;
-  width: 1400px;
+  width: 1300px;
 }
 .sciencePotential__four-slide .sciencePotential__four-slide__icon-one {
   position: absolute;
@@ -3503,6 +3497,9 @@ body {
   font-size: 28px;
   color: #fff;
 }
+.scienceCity__one-slide .scienceCity__one-slide__text span {
+  color: #ffc000;
+}
 .scienceCity__one-slide .scienceCity__one-slide__text:nth-of-type(1) {
   top: 318px;
   left: 256px;
@@ -3524,6 +3521,9 @@ body {
   color: #fff;
   position: absolute;
   width: 400px;
+}
+.scienceCity__one-slide .scienceCity__one-slide__text--three span {
+  color: #ffc000;
 }
 .scienceCity__one-slide .scienceCity__underline-text {
   position: absolute;
@@ -3694,7 +3694,7 @@ body {
   padding: 0 40px;
 }
 .scienceCity__three-slide .scienceCity__three-slide__title {
-  font-size: 65px;
+  font-size: 42px;
   color: #ffc000;
 }
 .scienceCity__three-slide .scienceCity__three-slide__left-side {
@@ -3854,7 +3854,7 @@ body {
 }
 .scienceCity__four-slide .scienceCity__four-slide__text:nth-of-type(1) {
   top: 378px;
-  left: 238px;
+  left: 186px;
 }
 .scienceCity__four-slide .scienceCity__four-slide__text:nth-of-type(2) {
   top: 114px;
