@@ -1073,6 +1073,8 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .agro__four-slide .agro__four-slide__text-hex {
   font-size: 38px;
