@@ -1,0 +1,224 @@
+// 'industry': '#2c92f2',
+//     'it': '#7fb7eb',
+//     'culture-tour': '#7febc2',
+//     'science-city': '#00C9EF',
+//     'agro': '#5BCBA4',
+//     'science-potential': '#00CCCC'
+
+
+.block {
+    display:flex;
+    position: relative;
+    z-index: 1;
+}
+.hex-layout {
+    width: 85vw;
+    position: relative;
+    left: -310px;
+    top: -62px;
+    font-size: 0;
+}
+.hex-layout::before {
+    content: "";
+    width: calc(#{$widthItem}/2 + #{$m});
+    float: left;
+    height: 120%;
+    shape-outside: repeating-linear-gradient(#0000 0 calc(#{$f} - 3px), red 0 #{$f} );
+  }
+.hex-item {
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    width: #{$widthItem};
+    margin: #{$m};
+    height: #{$heightItem}; 
+    background: $borderColor;
+    margin-bottom: calc(#{$m} - #{$widthItem} * 0.291);
+    position: relative;
+    cursor: pointer;
+    
+}
+.hex-item::after {
+    content: '';
+    position: absolute;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    width: inherit;
+    height: inherit;
+    transform: scale(0.95);
+    background-color: $bg;
+   
+}
+.hex-item::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 60px;
+    
+    box-shadow: 0 0 40px 20px rgb(59, 118, 189);
+    z-index: 4;
+}
+
+
+[sector=industry]::before {
+    left: 99px;
+    top: 107px;
+    box-shadow:0 0 80px 50px $science-potential;
+    animation: ripple-science-potential 4s ease 2s infinite;
+}
+[sector=culture-tour]::before {
+    left: 99px;
+    top: 107px;
+    box-shadow:0 0 80px 50px $science-potential;
+    animation: ripple-science-potential 4s ease 2s infinite;
+}
+[sector=science-potential]::before {
+    left: 99px;
+    top: 107px;
+    box-shadow:0 0 80px 50px $science-potential;
+    animation: ripple-science-potential 4s ease 2s infinite;
+}
+[sector=science-city]::before {
+    left: 99px;
+    top: 107px;
+    box-shadow:0 0 80px 50px $science-potential;
+    animation: ripple-science-potential 4s ease 2s infinite;
+}
+[sector=agro]::before {
+    left: 99px;
+    top: 107px;
+    box-shadow:0 0 80px 50px $science-potential;
+    animation: ripple-science-potential 4s ease 2s infinite;
+}
+[sector=it]::before {
+    left: 99px;
+    top: 107px;
+    box-shadow:0 0 80px 50px $science-potential;
+    animation: ripple-science-potential 4s ease 2s infinite;
+}
+
+// @keyframes ripple-industry {
+//     0% {
+//         box-shadow: 0 0 80px 40px $industry;
+//     }
+//     50% {
+//         box-shadow: 0 0 80px 80px $industry;
+//     }
+//     100% {
+//         box-shadow: 0 0 80px 40px $industry;
+//     }
+// }
+// @keyframes ripple-culture-tour {
+//     0% {
+//         box-shadow: 0 0 80px 40px $culture-tour;
+//     }
+//     50% {
+//         box-shadow: 0 0 80px 80px $culture-tour;
+//     }
+//     100% {
+//         box-shadow: 0 0 80px 40px $culture-tour;
+//     }
+// }
+@keyframes ripple-science-potential {
+    0% {
+        box-shadow: 0 0 80px 40px $science-potential;
+    }
+    50% {
+        box-shadow: 0 0 80px 80px $science-potential;
+    }
+    100% {
+        box-shadow: 0 0 80px 40px $science-potential;
+    }
+}
+// @keyframes ripple-science-city{
+//     0% {
+//         box-shadow: 0 0 80px 40px $science-sity;
+//     }
+//     50% {
+//         box-shadow: 0 0 80px 80px $science-sity;
+//     }
+//     100% {
+//         box-shadow: 0 0 80px 40px $science-sity;
+//     }
+// }
+// @keyframes ripple-agro{
+//     0% {
+//         box-shadow: 0 0 80px 40px $agro;
+//     }
+//     50% {
+//         box-shadow: 0 0 80px 80px $agro;
+//     }
+//     100% {
+//         box-shadow: 0 0 80px 40px $agro;
+//     }
+// }
+// @keyframes ripple-it{
+//     0% {
+//         box-shadow: 0 0 80px 40px $it;
+//     }
+//     50% {
+//         box-shadow: 0 0 80px 80px $it;
+//     }
+//     100% {
+//         box-shadow: 0 0 80px 40px $it;
+//     }
+// }
+
+
+
+
+
+.hex-item__icon {
+    width: $sizeIcon;
+    height: $sizeIcon;
+    position: absolute;
+    left: calc(#{$widthItem}/2 - #{$sizeIcon}/2);
+    top: calc(#{$heightItem}/2 - #{$sizeIcon}/2);
+    z-index: 2;
+}
+.hexagon__page {
+    width: 0;
+    height: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s all;
+    background-color: $bgPage;
+}
+.hexagon__page-close {
+    width: 140px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.hexagon__page::-webkit-scrollbar {
+    width: 0;
+}
+
+.active-page {
+    z-index: 2; 
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed !important; 
+    top: 0; 
+    left: 0; 
+    display: flex !important;
+    opacity: 1 !important;
+    transition: 0.5s all !important;
+    background-color: $bgPage !important;
+}
+
+// Удаленные гексагоны
+
+.hex-item:nth-of-type(n+5):nth-of-type(-n+7){
+    opacity: 0;
+}
+.hex-item:nth-of-type(13), .hex-item:nth-of-type(32), .hex-item:nth-of-type(33){
+    opacity: 0;
+}

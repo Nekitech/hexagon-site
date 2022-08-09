@@ -1,0 +1,50 @@
+// наука-обр - 00CCCC
+// сельхоз 5BCBA4
+// наукоград - 00C9EF
+// пром потенциал 9b7feb
+// культур-тур 7febc2
+// экспорт 7fb7eb
+// промышленность 2c92f2
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+// @font-face {
+//     font-family: Montserrat;
+//     src: url(../fonts/Montserrat-Bold.ttf);
+// }
+
+
+@import '@mixins/mixins.scss';
+@import '@variables/variablesSlides.scss';
+@import '@variables/variablesScreen.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $bg;
+    overflow: hidden;
+    font-family: Montserrat;
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-weight: 600;
+    // font-family: 'Nunito Sans', sans-serif;
+    // font-family: 'Playfair Display', serif;
+    
+}
+
+
+@import 'tags/tags.scss';
+@import 'rightSide/rightSide.scss';
+@import 'hexLayout/hexLayout.scss';
+@import '@templates/templateStartSlide.scss';
+@import 'agro/agro.scss';
+@import 'industry/industry.scss';
+@import 'SEPotential/sciencePotential.scss';
+@import 'CTPotential/cultureTour.scss';
+@import 'scienceCity/scienceCity.scss';
+@import 'it/it.scss';
+
+

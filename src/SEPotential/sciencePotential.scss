@@ -1,0 +1,337 @@
+.sciencePotential__start-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sciencePotential__start-slide__img-one {
+    width: 73%;
+    height: 64%;
+    top: 53px;
+    left: 64px;
+
+}
+.scienceCity__hexagon-inner--text {
+    background-color: $bg;
+}
+.sciencePotential__start-slide__img-two {
+    width: 82%;
+    height: 47%;
+    top: 94px;
+    left: 51px;
+    
+}
+.sciencePotential__start-slide__img-three {
+    width: 64%;
+    height: 77%;
+    top: 30px;
+    left: 70px;
+    
+}
+.sciencePotential__start-slide__img-four {
+    width: 76%;
+    height: 82%;
+    top: 19px;
+    left: 52px;
+    
+}
+
+.sciencePotential__start-slide__title {
+    font-size: $sizeSlidesTitle;
+    color: $colorSlidesTitle;
+}
+.sciencePotential__start-slide__blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.sciencePotential__start-slide__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    border: 4px solid #fff;
+    padding: 5px;
+}
+.sciencePotential__start-slide__logo {
+    width: 120px;
+    height: 120px;
+}
+// .sciencePotential__start-slide__text {
+//     font-size: calc(#{$textSize} - 10px);
+//     color: $textColor;
+    
+// }
+.sciencePotenial__start-slide__text {
+    font-size: $textSize;
+    color: $textColor;
+    position: absolute;
+
+}
+.sciencePotenial__start-slide__text:nth-of-type(1){
+    bottom: 220px;
+    left: 332px;
+}
+.sciencePotenial__start-slide__text:nth-of-type(2){
+    top: 303px;
+    left: 699px;
+}
+.sciencePotenial__start-slide__text:nth-of-type(3){
+    bottom: 220px;
+    right: 631px;
+}
+.sciencePotenial__start-slide__text:nth-of-type(4){
+    top: 260px;
+    right: 270px;
+}
+
+// Научный потенциал - 1 слайд
+
+.sciencePotential__one-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    $widthHex: 600px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 10px;
+    .sciencePotential__one-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        position: absolute;
+        top: 75px;
+        left: 344px;
+        width: 1300px;
+    }
+    .sciencePotential__one-slide__left-side {
+        margin-bottom: 140px;
+    }
+    .scienceCity__one-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .scienceCity__one-slide__hexagon-inner {
+        background-color: $bg;
+    }
+    
+    .scienceCity__one-slide__image{
+        width: 82%;
+        height: 66%;
+        position: relative;
+        left: 65px;
+        top: 84px;
+    }
+    .sciencePotential__one-slide__right-side {
+        width: 900px;
+        margin-right: 200px;
+    }
+    .sciencePotential__one-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .sciencePotential__one-slide__info {
+        font-size: $sizeSlidesSubtitle;
+        color: $colorSlidesSubtitle;
+        position: absolute;
+        left: 20px;
+        bottom: 60px;
+        width: 700px;
+    }
+    .sciencePotential__one-slide__info span {
+        font-size: 60px;
+    }
+    .sciencePotential__one-slide__icon {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+// Научный потенциал - 2 слайд
+
+.sciencePotential__two-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    $widthHex: 600px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 10px;
+    .sciencePotential__two-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        position: absolute;
+        top: 80px;
+        left: 630px;
+        width: 800px;
+    }
+    .scienceCity__two-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .scienceCity__two-slide__hexagon-inner {
+        background-color: $bg;
+    }
+    .scienceCity__two-slide__image {
+        width: 68%;
+        height: 46%;
+        position: relative;
+        left: 120px;
+        top: 104px;
+    }
+    .sciencePotential__two-slide__right-side {
+        font-size: calc(#{$textSize} - 2px);
+        color: $textColor;
+        width: 900px;
+        margin-right: 200px;
+    }
+    .sciencePotential__two-slide__text {
+        
+    }
+    .sciencePotential__two-slide__info {
+        font-size: $sizeSlidesSubtitle;
+        color: $colorSlidesSubtitle;
+        position: absolute;
+        left: 60px;
+        bottom: 80px;
+        width: 700px;
+    }
+    .sciencePotential__two-slide__info span {
+        font-size: 60px;
+    }
+    .sciencePotential__two-slide__icon {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+//Научный потенциал - 3 слайд
+
+.sciencePotential__three-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    $widthHex: 600px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 10px;
+    .sciencePotential__three-slide__title {
+        font-size: calc(#{$sizeSlidesTitle} + 18px);
+        color: $colorSlidesTitle;
+        position: absolute;
+        top: 80px;
+        left: 630px;
+        width: 700px;
+    }
+    .scienceCity__three-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .scienceCity__three-slide__hexagon-inner {
+        background-color: $bg;
+    }
+    .scienceCity__three-slide__image {
+        width: 75%;
+        height: 82%;
+        position: relative;
+        left: 65px;
+        top: 24px;
+    }
+    .sciencePotential__three-slide__right-side {
+        font-size: $textSize;
+        color: $textColor;
+        width: 830px;
+        margin-right: 361px;
+    }
+    .sciencePotential__three-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .sciencePotential__three-slide__icon {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    .sciencePotential__three-slide__logo {
+        position: absolute;
+        left: 60px;
+        bottom: 80px;
+    }
+}
+
+
+//Научный потенциал - 4 слайд
+
+.sciencePotential__four-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    $widthHex: 600px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 10px;
+
+    .sciencePotential__four-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        position: absolute;
+        top: 80px;
+        left: 350px;
+        width: 1400px;
+    }
+    .scienceCity__four-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .scienceCity__four-slide__hexagon-inner {
+        background-color: $bg;
+    }
+    .scienceCity__four-slide__image {
+        width: 75%;
+        height: 82%;
+        position: relative;
+        left: 65px;
+        top: 24px;
+    }
+    .sciencePotential__four-slide__right-side {
+        font-size: $textSize;
+        color: $textColor;
+        width: 900px;
+        margin-right: 250px;
+        margin-bottom: 300px;
+    }
+    .sciencePotential__four-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .sciencePotential__four-slide__info {
+        font-size: calc(#{$sizeSlidesSubtitle} - 4px);
+        color: $colorSlidesSubtitle;
+        position: absolute;
+        left: 60px;
+        bottom: 80px;
+        width: 1300px;
+
+    }
+    .sciencePotential__four-slide__icon-one {
+        position: absolute;
+        right: 200px;
+        bottom: 240px;
+    }
+    .sciencePotential__four-slide__icon-two {
+        position: absolute;
+        right: 20px;
+        bottom: 100px;
+    }
+}
+
+
+

@@ -1,0 +1,550 @@
+// Наукоград - стартовый слайд
+.scienceCity__start-slide {
+
+    $widthHex: 400px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+    .scienceCity__hexNav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 700px;
+    }
+    .scienceCity__start-slide__title {
+        position: absolute;
+        font-size: $sizeSlidesTitle;
+        color: $yellowBee;
+        top: 30px;
+        left: 150px;
+    }
+    .scienceCity__start-slide__text {
+        font-size: $textSize;
+        color: $yellowBee;
+    }
+    .scienceCity__start-slide__text--one {
+        position: absolute;
+        right: 86px;
+        top: 138px;
+    }
+    .scienceCity__start-slide__text--two {
+        position: absolute;
+        left: 150px;
+        top: 118px;
+    }
+    .scienceCity__start-slide__text--three {
+        position: absolute;
+        right: 100px;
+        bottom: 414px;
+    }
+    .scienceCity__start-slide__text--four {
+        position: absolute;
+        left: 150px;
+        top: 784px;
+    }
+    .scienceCity__block {
+        width: fit-content;
+        cursor: pointer;
+    }
+    .scienceCity__block:nth-of-type(1){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/6 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex} + 45px);
+        
+    }
+    .scienceCity__block:nth-of-type(2){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex} + 24px);
+        
+    }
+    .scienceCity__block:nth-of-type(3){ 
+        margin-left: calc(#{$widthHex} - #{$widthHex}/6 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*1.5 + #{$mgHex});
+    }
+    .scienceCity__block:nth-of-type(4) {
+        position: relative;
+        top: calc(#{-$heightHex}*2 + #{$mgHex} - 21px);
+    }
+    
+    .scienceCity__hexagon-inner--text {
+        background-color: $bg;
+    }
+    
+    .sciencePotenial__start-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+        position: absolute;
+    
+    }
+    .scienceCity__name-inderline {
+        position: absolute;
+        
+    }
+    .scienceCity__name-inderline:nth-of-type(1){
+        top: 175px;
+        right: 304px;
+    }
+    .scienceCity__name-inderline:nth-of-type(2){
+        top: 177px;
+        left: 360px;
+    }
+    .scienceCity__name-inderline:nth-of-type(3){
+        top: 631px;
+        right: 284px;
+    }
+    .scienceCity__name-inderline:nth-of-type(4){
+        top: 819px;
+        left: 288px;
+    }
+    .scienceCity__img--one {
+        width: 120%;
+    }
+    .scienceCity__img--three {
+        width: 120%;
+    }
+}
+
+
+
+
+//Наукоград - 1 слайд
+
+.scienceCity__one-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+
+    $widthHex: 400px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+
+    .scienceCity__one-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        position: absolute;
+        top: 114px;
+        left: 58px;
+    }
+    .scienceCity__one-slide__right-side {
+        margin-top: 100px;
+    }
+    .scienceCity__one-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    
+    .scienceCity__one-slide__hexagon-outer:nth-of-type(1) {
+        position: relative;
+        
+    }
+    .scienceCity__one-slide__hexagon-outer:nth-of-type(2){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .scienceCity__one-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex}); 
+    }
+    
+    .scienceCity__one-slide__text-img {
+        width: 100%;
+        height: 150%;
+    }
+    .scienceCity__one-slide__text-img-two {
+        width: 124%;
+        height: 112%;
+    }
+    .scienceCity__one-slide__text-img-three {
+        width: 129%;
+        height: 118%;
+    }
+    .scienceCity__one-slide__info-text {
+        color: $textColor;
+        font-size: $textSize;
+        width: 60%;
+    }
+    .scienceCity__one-slide__info-text div {
+        border: 10px solid #fff;
+        padding: 10px;
+    }
+    .scienceCity__one-slide__text {
+        position: absolute;
+        width: 300px;
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .scienceCity__one-slide__text span {
+        color: $yellowBee;
+    }
+    .scienceCity__one-slide__text:nth-of-type(1) {
+        top: 318px;
+        left: 256px;
+    
+    }
+    .scienceCity__one-slide__text:nth-of-type(2) {
+        bottom: 100px;
+        left: 98px;
+        width: 1000px;
+    }
+    .scienceCity__one-slide__text:nth-of-type(3) {
+        bottom: 570px;
+        left: 100px;
+        width: 500px;
+    }
+    .scienceCity__one-slide__text--three {
+        top: 197px;
+        right: 100px;
+        font-size: 28px;
+        color: #fff;
+        position: absolute;
+        width: 400px;
+    }
+    .scienceCity__one-slide__text--three span {
+        color: $yellowBee;
+    }
+    .scienceCity__underline-text {
+        position: absolute;
+        
+    }
+    .scienceCity__underline-text--one {
+        left: 340px;
+        top: 259px;
+    }
+    .scienceCity__underline-text--two {
+        right: 441px;
+        top: 175px;
+    }
+    .scienceCity__underline-text--three {
+        left: 346px;
+        bottom: 380px;
+    }
+    
+
+}
+
+
+
+// Наукоград - 2 слайд
+
+.scienceCity__two-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+
+    $widthHex: 450px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 15px;
+
+    .scienceCity__two-slide__space-eat {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    .scienceCity__two-slide__left-side {
+        color: $textColor;
+    }
+    .scienceCity__two-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        position: absolute;
+        top: 100px;
+        left: 80px;
+    }
+    .scienceCity__two-slide__right-side {
+        display: flex;
+        flex-direction: column;
+        margin-left: 300px;
+    }
+    .scienceCity__two-slide__hexagon-outer {
+        
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .scienceCity__two-slide__hexagon-outer:nth-last-of-type(1) {
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .scienceCity__two-slide__hexagon-outer:nth-of-type(2){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .scienceCity__two-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex}); 
+    }
+    .scienceCity__two-slide__hexagon-outer:nth-of-type(4) {
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*1.5 + 2*#{$mgHex});
+    }
+    .scienceCity__two-slide__hexagon-inner--text {
+        background-color: $bg;
+    }
+    .scienceCity__two-slide__hex-text {
+        font-size: $textSize;
+        color: $yellowBee;
+        position: absolute;
+        top: 120px;
+        left: 80px;
+        text-align: center;
+    }
+    .scienceCity__two-slide__image-space-eat {
+        width: 100%;
+        height: 100%;
+    }
+    .scienceCity__two-slide__text {
+        position: absolute;
+        width: 345px;
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .scienceCity__two-slide__text:nth-of-type(1) {
+        top: 318px;
+        left: 256px;
+    
+    }
+    .scienceCity__two-slide__text:nth-of-type(2) {
+        top: 114px;
+        right: 0;
+    }
+    .scienceCity__two-slide__text:nth-of-type(3) {
+        bottom: 30px;
+        left: 200px;
+        width: 700px;
+    }
+    .scienceCity__underline-text {
+        position: absolute;
+    }
+    .scienceCity__underline-text--one {
+        left: 451px;
+        top: 178px;
+    }
+    .scienceCity__underline-text--two {
+        right: 261px;
+        top: 100px;
+    }
+    .scienceCity__underline-text--three {
+        left: 558px;
+        bottom: 244px;
+    }
+}
+
+
+
+//Наукоград - 3 слайд
+
+.scienceCity__three-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+
+    $widthHex: 400px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 10px;
+
+    .scienceCity__three-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+    }
+    .scienceCity__three-slide__left-side {
+        position: absolute;
+        top: 104px;
+        left: 54px;
+    }
+    .scienceCity__three-slide__text {
+        font-size: calc(#{$textSize} - 4px);
+        color: $textColor;
+    }
+    .scienceCity__three-slide__right-side {
+        margin-top: 100px;
+    }
+    .scienceCity__three-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+    .scienceCity__three-slide__hexagon-outer:nth-of-type(2){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .scienceCity__three-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .scienceCity__three-slide__hexagon-outer:nth-of-type(4) {
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*1.5 + 2*#{$mgHex});
+    }
+    .scienceCity__three-slide__hexagon-inner--text {
+        background-color: $bg;
+    }
+    .scienceCity__three-slide__hex-text {
+        font-size: $textSize;
+        color: $yellowBee;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        text-align: center;
+    }
+    .scienceCity__three-slide__img {
+        width: 131%;
+        height: 128%;
+        position: relative;
+        left: -104px;
+    }
+    .scienceCity__three-slide__text {
+        position: absolute;
+        width: 300px;
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .scienceCity__three-slide__text:nth-of-type(1) {
+        top: 378px;
+        left: 238px;
+    
+    }
+    .scienceCity__three-slide__text:nth-of-type(2) {
+        top: 114px;
+        right: 100px;
+    }
+    .scienceCity__underline-text {
+        position: absolute;
+    }
+    .scienceCity__underline-text--one {
+        left: 344px;
+        top: 256px;
+    }
+    .scienceCity__underline-text--two { 
+        right: 442px;
+        top: 169px;
+    }
+    
+}
+
+
+// Наукоград - 4 Слайд
+
+.scienceCity__four-slide {
+    @include startStyleAnima;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+
+    $widthHex: 400px;
+    $heightHex: calcHeightHexSlide($widthHex);
+    $mgHex: 10px;
+
+
+    .scienceCity__four-slide__title {
+        font-size: $sizeSlidesTitle;
+        color: $colorSlidesTitle;
+        position: absolute;
+        top: 80px;
+        left: 62px;
+    }
+    .scienceCity__four-slide__subtitle {
+        font-size: calc(#{$sizeSlidesSubtitle} - 6px);
+        color: $colorSlidesSubtitle;
+        border-left: 4px solid $yellowBee;
+        padding-left: 5px;
+        position: absolute;
+        top: 140px;
+        left: 62px;
+    }
+  
+    .scienceCity__four-slide__left-side {
+    }
+    .scienceCity__four-slide__text {
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .scienceCity__four-slide__right-side {
+        margin-top: 100px;
+    }
+    .scienceCity__four-slide__hexagon-outer {
+        width: $widthHex;
+        height: $heightHex;
+    }
+
+    .scienceCity__four-slide__hexagon-outer:nth-of-type(2){
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}/2 + #{$mgHex});
+    }
+    .scienceCity__four-slide__hexagon-outer:nth-of-type(3){
+        position: relative;
+        top: calc(#{-$heightHex} + #{$mgHex});
+    }
+    .scienceCity__four-slide__hexagon-outer:nth-of-type(4) {
+        margin-left: calc(#{$widthHex} - #{$widthHex}/4 + #{$mgHex});
+        position: relative;
+        top: calc(#{-$heightHex}*1.5 + 2*#{$mgHex});
+    }
+    .scienceCity__four-slide__hexagon-inner--text {
+        background-color: $bg;
+    }
+    .scienceCity__four-slide__hex-text {
+        font-size: $textSize;
+        color: $yellowBee;
+        position: absolute;
+        top: 106px;
+        left: 46px;
+        text-align: center;
+    }
+    .scienceCity__four-slide__text {
+        position: absolute;
+        width: 300px;
+        font-size: $textSize;
+        color: $textColor;
+    }
+    .scienceCity__four-slide__text:nth-of-type(1) {
+        top: 378px;
+        left: 186px;
+    
+    }
+    .scienceCity__four-slide__text:nth-of-type(2) {
+        top: 114px;
+        right: 100px;
+    }
+    .scienceCity__four-slide__text:nth-of-type(3) {
+        bottom: 64px;
+        left: 170px;
+        width: 400px;
+    }
+    .scienceCity__four-slide__img {
+        width: 100%;
+        height: 100%;
+        // position: relative;
+        // left: -104px;
+    }
+    .scienceCity__underline-text {
+        position: absolute;
+    }
+    .scienceCity__underline-text--one {
+        left: 344px;
+        top: 256px;
+    }
+    .scienceCity__underline-text--two { 
+        right: 442px;
+        top: 169px;
+    }
+    .scienceCity__underline-text--three { 
+        left: 455px;
+        bottom: 228px;
+    }
+}
+
+
+
+
+

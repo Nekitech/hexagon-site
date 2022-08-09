@@ -1,0 +1,74 @@
+[tag=industry] {
+    top: 228px;
+    left: 648px;
+} 
+[tag=culture-tour] {
+    top: 404px;
+    left: 316px;
+} 
+[tag=it] {
+    top: 425px;
+    left: 730px;
+} 
+[tag=it] .bar {
+    width: 70px;
+}
+[tag=science-potential] {
+    top: 600px;
+    left: 200px;
+}
+[tag=science-potential]  .bar {
+    width: 45px;
+}  
+[tag=science-city] {
+    top: 610px;
+    left: 636px;
+} 
+[tag=science-city] .bar {
+    width: 80px;
+}
+[tag=agro] {
+    top: 800px;
+    left: 316px;
+    width: 200px;
+} 
+[tag=agro] .bar {
+    width: 100px;
+}
+
+.tag {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    
+}
+.circle {
+    clip-path: circle(8.1% at 50% 50%);
+    background-color: #e0dedc;
+    width: 8px;
+    height: 8px;
+    transform: scale(10);
+}
+.bar {
+    width: 50px;
+    height: 3px;
+    background-color: #e0dedc;
+}
+.area {
+    width: fit-content;
+    padding: 10px 5px;
+    height: fit-content;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.tag__text {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase
+    
+}
